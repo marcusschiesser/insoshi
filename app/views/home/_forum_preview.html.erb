@@ -1,5 +1,5 @@
 <table>
-  <tr><th>Discussion Forum</th></tr>
+  <tr><th><%= _('Discussion Forum') %></th></tr>
   <%- @topics.each do |topic| -%>
   <%- last_post = topic.posts.reverse.first -%>
   <tr class=<%= cycle("odd", "even") %>>
@@ -7,9 +7,9 @@
       <%= topic_link topic %>
       <br />
       <span class="quiet small">
-      Last post
-      <%= time_ago_in_words(last_post.created_at) %> ago
-      by <%= person_link last_post.person %>
+      <%= _('Last post') %>
+      <%= _("%{timeago} by %{person}") % {:timeago => time_ago_with_ago(last_post.created_at),
+        :person => person_link(last_post.person)} %>
       </span>
     </td>
   </tr>
@@ -17,5 +17,5 @@
 </table>
 
 <div class="more">
-<%= link_to "Go to discussion forum &raquo;", forum_path(topic.forum) %>
+<%= link_to _("Go to discussion forum &raquo;"), forum_path(topic.forum) %>
 </div>

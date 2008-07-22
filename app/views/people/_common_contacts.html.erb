@@ -1,6 +1,6 @@
 <%- if logged_in? -%>
   <%- unless @common_connections.empty? -%>
-    <h2>Common Contacts</h2>
+    <h2><%= _("Common Contacts") %></h2>
     <ul class="grid contacts small">
       <%- @common_connections.each do |connection| -%>
         <li class="vcard">
@@ -10,7 +10,7 @@
         </li>
       <%- end -%>
       <li class="more">
-        <%= link_to "See all &raquo;", 
+        <%= link_to _("See all &raquo;"), 
                     common_contacts_person_path(@person) %>
       </li>
     </ul>

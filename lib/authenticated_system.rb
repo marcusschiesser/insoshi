@@ -66,10 +66,10 @@ module AuthenticatedSystem
           store_location
           if global_prefs.demo?
             self.current_person = Person.find(DEMO_USER_ID)
-            flash[:success] = "You have been logged in as the guest user."
+            flash[:success] = _("You have been logged in as the guest user.")
             redirect_back_or_default(home_url)
           else
-            flash[:error] = "You must log in to access this page."
+            flash[:error] = _("You must log in to access this page.")
             redirect_to login_url
           end
         end

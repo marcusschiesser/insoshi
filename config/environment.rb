@@ -76,3 +76,4 @@ require 'bluecloth'
 #
 # The directory /tmp/ruby.[USER] is used instead
 ENV['INLINEDIR']="/tmp/ruby.#{ENV['USER']}" unless ENV['OS'] =~ /Windows/
+

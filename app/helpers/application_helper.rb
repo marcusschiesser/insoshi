@@ -4,28 +4,28 @@ module ApplicationHelper
   ## Menu helpers
   
   def menu
-    home     = menu_element("Home",   home_path)
-    people   = menu_element("People", people_path)
+    home     = menu_element(_("Home"),   home_path)
+    people   = menu_element(_("People"), people_path)
     if Forum.count == 1
-      forum = menu_element("Forum", forum_path(Forum.find(:first)))
+      forum = menu_element(_("Forum"), forum_path(Forum.find(:first)))
     else
-      forum = menu_element("Forums", forums_path)
+      forum = menu_element(_("Forums"), forums_path)
     end
-    resources = menu_element("Resources", "http://docs.insoshi.com/")
+    resources = menu_element(_("Resources"), "http://docs.insoshi.com/")
     if logged_in? and not admin_view?
-      profile  = menu_element("Profile",  person_path(current_person))
-      messages = menu_element("Messages", messages_path)
-      blog     = menu_element("Blog",     blog_path(current_person.blog))
-      photos   = menu_element("Photos",   photos_path)
-      contacts = menu_element("Contacts",
+      profile  = menu_element(_("Profile"),  person_path(current_person))
+      messages = menu_element(_("Messages"), messages_path)
+      blog     = menu_element(_("Blog"),     blog_path(current_person.blog))
+      photos   = menu_element(_("Photos"),   photos_path)
+      contacts = menu_element(_("Contacts"),
                               person_connections_path(current_person))
       links = [home, profile, contacts, messages, blog, people, forum]
     elsif logged_in? and admin_view?
-      home =    menu_element("Home", home_path)
-      people =  menu_element("People", admin_people_path)
-      forums =  menu_element(inflect("Forum", Forum.count),
+      home =    menu_element(_("Home"), home_path)
+      people =  menu_element(_("People"), admin_people_path)
+      forums =  menu_element(inflect(_("Forum"), Forum.count),
                              admin_forums_path)
-      preferences = menu_element("Prefs", admin_preferences_path)
+      preferences = menu_element(_("Prefs"), admin_preferences_path)
       links = [home, people, forums, preferences]
     else
       links = [home, people]
@@ -33,7 +33,7 @@ module ApplicationHelper
     if global_prefs.about.blank?
       links
     else
-      links.push(menu_element("About", about_url))
+      links.push(menu_element(_("About"), about_url))
     end
   end
   
@@ -109,7 +109,7 @@ module ApplicationHelper
       path = new_person_message_path(person)
     end
     img = image_tag("icons/email.gif")
-    action = reply.nil? ? "Send a message" : "Send reply"
+    action = reply.nil? ? _("Send a message") : _("Send reply")
     opts = { :class => 'email-link' }
     str = link_to(img, path, opts)
     str << "&nbsp;"
@@ -117,11 +117,10 @@ module ApplicationHelper
   end
 
   def formatting_note
-    %(HTML and
-      #{link_to("Markdown",
+    _("HTML and %{markdown} supported") % {:markdown => 
+      link_to("Markdown",
                 "http://daringfireball.net/projects/markdown/basics",
                 :popup => true)}
-     supported)
   end
 
   private

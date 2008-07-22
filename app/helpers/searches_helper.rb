@@ -9,11 +9,11 @@ module SearchesHelper
   
   def search_type
     if params[:controller] == "forums" or params[:model] == "ForumPost"
-      "Forums" 
+      _("Forums") 
     elsif params[:controller] == "messages" or params[:model] == "Message"
-      "Messages"
+      _("Messages")
     else
-      "People"
+      _("People")
     end
   end
   

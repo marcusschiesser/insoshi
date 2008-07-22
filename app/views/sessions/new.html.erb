@@ -1,32 +1,32 @@
 <%- column_div :type => :primary do -%>
-  <h2>Sign in</h2>
+  <h2><%= _("Sign in") %></h2>
 
   <% form_tag session_path do -%>
     <div class="form_row">
-      <label for="username">Email address</label>
+      <label for="username"><%= _("Email address") %></label>
       <%= text_field_tag 'email', params[:email],
                                   :maxlength => Person::MAX_EMAIL  %>
     </div>
     <%= set_focus_to_id "email" %>
 
     <div class="form_row">
-      <label for="password">Password</label>
+      <label for="password"><%= _("Password") %></label>
       <%= password_field_tag 'password', params[:password],
                                          :maxlength => Person::MAX_PASSWORD %>
     </div>
 
     <div class="form_row">
-      <label for="remember_me" class="checkbox">Remember me:</label>
+      <label for="remember_me" class="checkbox"><%= _("Remember me:") %></label>
       <%= check_box_tag 'remember_me', '1', true, :class => "checkbox" %>
     </div>
 
     <div class="form_row">
-      <%= submit_tag 'Sign in', :class => "button" %>
-      <p>or <%= link_to "Sign up", signup_path %></p>
+      <%= submit_tag _('Sign in'), :class => "button" %>
+      <p><%= _("or") %> <%= link_to _("Sign up"), signup_path %></p>
     </div>
 
     <p class="form_row">
-      <%= link_to "I forgot my password!", new_password_reminder_path %>
+      <%= link_to _("I forgot my password!"), new_password_reminder_path %>
     </p>
   <% end -%>
 <%- end -%>

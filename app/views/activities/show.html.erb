@@ -1,18 +1,18 @@
 <p>
-  <b>Person:</b>
+  <b><%= _('Person:') %></b>
   <%=h @activity.person_id %>
 </p>
 
 <p>
-  <b>Instance:</b>
+  <b><%= _('Instance:') %></b>
   <%=h @activity.item_id %>
 </p>
 
 <p>
-  <b>Type:</b>
+  <b><%= _('Type:') %></b>
   <%=h @activity.item_type %>
 </p>
 
 
-<%= link_to 'Edit', edit_activity_path(@activity) %> |
-<%= link_to 'Back', activities_path %>
+<%= link_to _('Edit'), edit_activity_path(@activity) %> |
+<%= link_to _('Back'), activities_path %>

@@ -29,7 +29,7 @@ class PhotosController < ApplicationController
   def create
     if params[:photo].nil?
       # This is mainly to prevent exceptions on iPhones.
-      flash[:error] = "Your browser doesn't appear to support file uploading"
+      flash[:error] = _("Your browser doesn't appear to support file uploading")
       redirect_to edit_person_url(current_person) and return
     end
     if params[:commit] == "Cancel"
@@ -41,7 +41,7 @@ class PhotosController < ApplicationController
   
     respond_to do |format|
       if @photo.save
-        flash[:success] = "Photo successfully uploaded"
+        flash[:success] = _("Photo successfully uploaded")
         format.html { redirect_to(edit_person_path(current_person)) }
       else
         format.html { render :action => "new" }
@@ -64,7 +64,7 @@ class PhotosController < ApplicationController
         format.html { redirect_to(edit_person_path(current_person)) }
       else    
         format.html do
-          flash[:error] = "Invalid image!"
+          flash[:error] = _("Invalid image!")
           redirect_to home_url
         end
       end
@@ -80,7 +80,7 @@ class PhotosController < ApplicationController
       end
     end
     @photo.destroy
-    flash[:success] = "Photo deleted"
+    flash[:success] = _("Photo deleted")
     respond_to do |format|
       format.html { redirect_to edit_person_url(current_person) }
     end

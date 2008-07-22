@@ -1,8 +1,8 @@
 <% column_div :type => :primary do %>
-  <h2>Search results</h2>
+  <h2><%= _("Search results") %></h2>
   <%= will_paginate(@results) %>
     <%- if @results.empty? -%>
-      <h3>No results</h3>
+      <h3><%= _("No results") %></h3>
     <%- else -%>
       <ul class="list people">
         <%= render :partial => partial(@results), :collection => @results %>

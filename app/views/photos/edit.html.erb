@@ -3,11 +3,11 @@
 <% form_for @photo, :html => { :multipart => true } do |f| -%>
   <div class="form_field">
     <%= image_tag(@display_photo.public_filename(:thumbnail)) %><br />
-    <label for="photo">Update your photo:</label><br />
+    <label for="photo"><%= _("Update your photo:") %></label><br />
     <%= f.file_field :uploaded_data %>
   </div>
   <div class="form_field">
-    <%= submit_tag 'Update' %>
-    <%= f.submit "Cancel", :id => "cancel" %>
+    <%= submit_tag _('Update') %>
+    <%= f.submit _("Cancel"), :id => "cancel" %>
   </div>
 <% end -%>

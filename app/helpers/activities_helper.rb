@@ -7,9 +7,9 @@ module ActivitiesHelper
     when "BlogPost"
       post = activity.item
       blog = post.blog
-      view_blog = blog_link("View #{h person.name}'s blog", blog)
-      %(#{person_link(person)} made a blog post titled
-        #{post_link(blog, post)}.<br /> #{view_blog}.)
+      view_blog = blog_link(_("View %s's blog") % h(person.name), blog)
+      (_("%{person} made a blog post titled %{title}.") % {:person => person_link(person),
+        :title => post_link(blog, post)}) << "<br /> #{view_blog}."
     when "Comment"
       parent = activity.item.commentable
       parent_type = parent.class.to_s
@@ -17,28 +17,27 @@ module ActivitiesHelper
       when "BlogPost"
         post = activity.item.commentable
         blog = post.blog
-        %(#{person_link(person)} made a comment to
-           #{someones(blog.person, person)}
-           blog post #{post_link(blog, post)}.)
+        _("%{person} made a comment to %{someone}'s blog post %{post}.") % {:person => person_link(person),
+           :someone => person_link(blog.person),
+           :post => post_link(blog, post)}
       when "Person"
-        %(#{person_link(activity.item.commenter)} commented on 
-          #{wall(activity)}.)
+        _("%{person} commented on %{wall}.") % {:person => person_link(activity.item.commenter),
+          :wall => wall(activity)}
       end
     when "Connection"
-      %(#{person_link(activity.item.person)} and
-        #{person_link(activity.item.contact)}
-        have connected.)
+      _("%{person1} and %{person2} have connected.") % {:person1 => person_link(activity.item.person),
+        :person2 => person_link(activity.item.contact)}
     when "ForumPost"
       post = activity.item
-      %(#{person_link(person)} made a post on the forum topic
-        #{topic_link(post.topic)}.)
+      _("%{person} made a post on the forum topic %{topic}.") % {:person => person_link(person),
+        :topic => topic_link(post.topic)}
     when "Topic"
-      %(#{person_link(person)} created the new discussion topic
-        #{topic_link(activity.item)}.)
+      _("%{person} created the new discussion topic %{topic}.") % {:person => person_link(person), 
+        :topic => topic_link(activity.item)}
     when "Photo"
-      %(#{person_link(person)}'s profile picture has changed.)
+      _("%{person}'s profile picture has changed.") % {:person => person_link(person)}
     when "Person"
-      %(#{person_link(person)}'s description has changed.)
+      _("%{person}'s description has changed.") % {:person => person_link(person)}
     else
       # TODO: make this a more graceful falure (?).
       raise "Invalid activity type #{activity_type(activity).inspect}"
@@ -51,8 +50,7 @@ module ActivitiesHelper
     when "BlogPost"
       post = activity.item
       blog = post.blog
-      %(#{person_link(person)} made a
-        #{post_link("new blog post", blog, post)}.)
+      _("%{person} made a %{post}.") % {:person => person_link(person), :post => post_link(_("new blog post"), blog, post)}
     when "Comment"
       parent = activity.item.commentable
       parent_type = parent.class.to_s
@@ -60,30 +58,28 @@ module ActivitiesHelper
       when "BlogPost"
         post = activity.item.commentable
         blog = post.blog
-        %(#{person_link(person)} made a comment to
-           #{someones(blog.person, person)}
-           blog post #{post_link(blog, post)}.)
-        %(#{person_link(person)} made a comment on
-          #{someones(blog.person, person)} 
-          #{post_link("blog post", post.blog, post)}.)
+        _("%{person} made a comment on %{someone}'s %{post}.") % {:person => person_link(person),
+           :someone => person_link(blog.person),
+           :post => post_link(_("blog post"), post.blog, post)}
       when "Person"
-        %(#{person_link(activity.item.commenter)} commented on 
-          #{wall(activity)}.)
+        _("%{person} commented on %{wall}.") % {:person => person_link(activity.item.commenter),
+          :wall => wall(activity)}
       end
     when "Connection"
-      %(#{person_link(person)} and #{person_link(activity.item.contact)}
-        have connected.)
+      _("%{person1} and %{person2} have connected.") % {:person1 => person_link(person),
+        :person2 => person_link(activity.item.contact)}
     when "ForumPost"
       topic = activity.item.topic
       # TODO: deep link this to the post
-      %(#{person_link(person)} made a #{topic_link("forum post", topic)}.)
+      _("%{person} made a %{post}.") % {:person => person_link(person),
+        :post => topic_link(_("forum post"), topic)}
     when "Topic"
-      %(#{person_link(person)} created a 
-        #{topic_link("new discussion topic", activity.item)}.)
+      _("%{person} created a %{topic}.") % {:person => person_link(person), 
+        :topic => topic_link(_("new discussion topic"), activity.item)}
     when "Photo"
-      %(#{person_link(person)}'s profile picture has changed.)
+      _("%{person}'s profile picture has changed.") % {:person => person_link(person)}
     when "Person"
-      %(#{person_link(person)}'s description has changed.)
+      _("%{person}'s description has changed.") % {:person => person_link(person)}
     else
       raise "Invalid activity type #{activity_type(activity).inspect}"
     end
@@ -148,7 +144,7 @@ module ActivitiesHelper
   def wall(activity)
     commenter = activity.person
     person = activity.item.commentable
-    link_to("#{someones(person, commenter, false)} wall",
+    link_to(_("%{person}'s wall") % {:person => h(person.name)},
             person_path(person, :anchor => "wall"))
   end
   

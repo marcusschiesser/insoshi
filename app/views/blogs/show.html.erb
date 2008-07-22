@@ -1,11 +1,11 @@
 <%- column_div :type => :primary do -%>
-  <h2>Blog for <%= h @blog.person.name %></h2>
+  <h2><%= _("Blog for %s") % h(@blog.person.name) %></h2>
 
   <%- if @posts.empty? -%>
     <h3 class="blankslate">
-      No posts yet!
+      <%= _("No posts yet!") %>
       <%- if current_person?(@blog.person) -%>
-        <%= link_to "Write a post", new_blog_post_path(@blog) %>
+        <%= link_to _("Write a post"), new_blog_post_path(@blog) %>
       <%- end -%>
     </h3>
   <%- else -%>
@@ -19,7 +19,7 @@
 
 <%- column_div :type => :secondary do -%>
   <%- if current_person?(@blog.person) -%>
-  <h2>Add new post</h2>
+  <h2><%= _("Add new post") %></h2>
 
   <p><%= formatting_note %></p>
 

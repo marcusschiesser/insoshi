@@ -46,7 +46,7 @@ class PostsController < ApplicationController
     
     respond_to do |format|
       if @post.save
-        flash[:success] = 'Post created'
+        flash[:success] = _('Post created')
         format.html { redirect_to post_url }
       else
         format.html { render :action => resource_template("new") }
@@ -57,7 +57,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update_attributes(params[:post])
-        flash[:success] = 'Post updated'
+        flash[:success] = _('Post updated')
         format.html { redirect_to post_url }
       else
         format.html { render :action => resource_template("edit") }
@@ -68,7 +68,7 @@ class PostsController < ApplicationController
   def destroy
     @post = model.find(params[:id])
     @post.destroy
-    flash[:success] = "Post destroyed"
+    flash[:success] = _("Post destroyed")
 
     respond_to do |format|
       format.html { redirect_to posts_url }

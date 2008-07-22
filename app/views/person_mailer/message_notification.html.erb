@@ -1,4 +1,4 @@
-You have a new message at <%= @domain %>! Click here to retrieve it:
+<%= _("You have a new message at %s! Click here to retrieve it:") % @domain %>
 
 http://<%= @domain %>/messages/<%= @message.to_param %>
 

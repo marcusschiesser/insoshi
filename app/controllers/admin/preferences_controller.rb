@@ -32,9 +32,9 @@ class Admin::PreferencesController < ApplicationController
             end
           end
         end
-        flash[:success] = 'Preferences successfully updated.'
+        flash[:success] = _('Preferences successfully updated.')
         if server_restart?(old_preferences)
-          flash[:error] = 'Restart the server to activate the changes'
+          flash[:error] = _('Restart the server to activate the changes')
         end
         format.html { redirect_to admin_preferences_url }
       else

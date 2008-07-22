@@ -48,7 +48,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.save
-        flash[:notice] = 'Activity was successfully created.'
+        flash[:notice] = _('Activity was successfully created.')
         format.html { redirect_to(@activity) }
         format.xml  { render :xml => @activity, :status => :created,
                              :location => @activity }
@@ -67,7 +67,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.update_attributes(params[:event])
-        flash[:notice] = 'Activity was successfully updated.'
+        flash[:notice] = _('Activity was successfully updated.')
         format.html { redirect_to(@activity) }
         format.xml  { head :ok }
       else
@@ -82,7 +82,7 @@ class ActivitiesController < ApplicationController
   # DELETE /activities/1.xml
   def destroy
     @activity.destroy
-    flash[:success] = "Activity deleted"
+    flash[:success] = _("Activity deleted")
 
     respond_to do |format|
       format.html { redirect_to(person_url(current_person)) }
@@ -94,7 +94,7 @@ class ActivitiesController < ApplicationController
   private
 
     def not_implemented
-      flash[:error] = "Not implemented"
+      flash[:error] = _("Not implemented")
       redirect_to home_url
     end
 

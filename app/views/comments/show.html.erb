@@ -1,23 +1,23 @@
 <p>
-  <b>Person:</b>
+  <b><%= _("Person:") %></b>
   <%=h @comment.person_id %>
 </p>
 
 <p>
-  <b>Blog:</b>
+  <b><%= _("Blog:") %></b>
   <%=h @comment.blog_id %>
 </p>
 
 <p>
-  <b>Body:</b>
+  <b><%= _("Body:") %></b>
   <%=h @comment.body %>
 </p>
 
 <p>
-  <b>Type:</b>
+  <b><%= _("Type:") %></b>
   <%=h @comment.type %>
 </p>
 
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to _('Edit'), edit_comment_path(@comment) %> |
+<%= link_to _('Back'), comments_path %>

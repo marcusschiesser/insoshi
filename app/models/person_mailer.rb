@@ -10,24 +10,24 @@ class PersonMailer < ActionMailer::Base
   end
   
   def password_reminder(person)
-    from         "Password reminder <password-reminder@#{domain}>"
+    from         _("Password reminder <password-reminder@%{domain}>") % {:domain => domain}
     recipients   person.email
-    subject      formatted_subject("Password reminder")
+    subject      formatted_subject(_("Password reminder"))
     body         "domain" => server, "person" => person
   end
   
   def message_notification(message)
-    from         "Message notification <message@#{domain}>"
+    from         _("Message notification <message@%{domain}>") % {:domain => domain}
     recipients   message.recipient.email
-    subject      formatted_subject("New message")
+    subject      formatted_subject(_("New message"))
     body         "domain" => server, "message" => message,
                  "preferences_note" => preferences_note(message.recipient)
   end
   
   def connection_request(connection)
-    from         "Contact request <connection@#{domain}>"
+    from         _("Contact request <connection@%{domain}>") % {:domain => domain}
     recipients   connection.person.email
-    subject      formatted_subject("New contact request")
+    subject      formatted_subject(_("New contact request"))
     body         "domain" => server,
                  "connection" => connection,
                  "url" => edit_connection_path(connection),
@@ -35,9 +35,9 @@ class PersonMailer < ActionMailer::Base
   end
   
   def blog_comment_notification(comment)
-    from         "Comment notification <comment@#{domain}>"
+    from         _("Comment notification <comment@%{domain}>") % {:domain => domain}
     recipients   comment.commented_person.email
-    subject      formatted_subject("New blog comment")
+    subject      formatted_subject(_("New blog comment"))
     body         "domain" => server, "comment" => comment,
                  "url" => 
                  blog_post_path(comment.commentable.blog, comment.commentable),
@@ -46,9 +46,9 @@ class PersonMailer < ActionMailer::Base
   end
   
   def wall_comment_notification(comment)
-    from         "Comment notification <comment@#{domain}>"
+    from         _("Comment notification <comment@%{domain}>") % {:domain => domain}
     recipients   comment.commented_person.email
-    subject      formatted_subject("New wall comment")
+    subject      formatted_subject(_("New wall comment"))
     body         "domain" => server, "comment" => comment,
                  "url" => person_path(comment.commentable, :anchor => "wall"),
                  "preferences_note" => 
@@ -56,9 +56,9 @@ class PersonMailer < ActionMailer::Base
   end
   
   def email_verification(ev)
-    from         "Email verification <email@#{domain}>"
+    from         _("Email verification <email@%{domain}>") % {:domain => domain}
     recipients   ev.person.email
-    subject      formatted_subject("Email verification")
+    subject      formatted_subject(_("Email verification"))
     body         "server_name" => server,
                  "code" => ev.code
   end

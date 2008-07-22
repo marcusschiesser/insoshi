@@ -11,20 +11,18 @@
                :locals => { :person => current_person } %>
   <%- else -%>
     <%- unless global_prefs.app_name.blank? -%>
-      <h2>About <%= global_prefs.app_name %></h2>
+      <h2><%= _("About %s") % global_prefs.app_name %></h2>
     
       <p>
-        <%= link_to "Click here", about_path %>
-        to learn more about us.
+        <%= _("%s to learn more about us.") % link_to(_("Click here"), about_path) %>
       </p>
     <%- end -%>
     
-    <h2>Join
-      <%= global_prefs.app_name.blank? ? "the site" : global_prefs.app_name %>
+    <h2><%= _("Join %{site}") % {:site => (global_prefs.app_name.blank? ? _("the site") : global_prefs.app_name)} %>
     </h2>
     
     <div style="text-align: center;">
-      <%= link_to image_tag("button_signup.png"), signup_path %>
+      <%= link_to locale_image_tag("button_signup.png"), signup_path %>
     </div>
       
   <%- end -%>

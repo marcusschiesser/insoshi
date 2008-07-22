@@ -1,5 +1,5 @@
 <%- unless @some_contacts.empty? -%>
-  <h2>Contacts</h2>
+  <h2><%= _("Contacts") %></h2>
   <ul class="grid contacts small">
     <%- @some_contacts.each do |contact| -%>
       <li class="vcard">
@@ -8,7 +8,7 @@
       </li>
     <%- end -%>
     <li class="more">
-      <%= link_to "All contacts &raquo;", person_connections_path(person) %>
+      <%= link_to _("All contacts &raquo;"), person_connections_path(person) %>
     </li>
   </ul>
 <%- end -%>

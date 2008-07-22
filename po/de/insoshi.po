@@ -1,0 +1,1897 @@
+# German translations for PACKAGE package
+# German messages for PACKAGE.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Marcus Schiesser <>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: insoshi 1.0\n"
+"POT-Creation-Date: 2008-07-19 16:15+0200\n"
+"PO-Revision-Date: 2008-07-16 15:10+0200\n"
+"Last-Translator: Marcus Schiesser <>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/controllers/activities_controller.rb:51
+msgid "Activity was successfully created."
+msgstr "Aktivität wurde erfolgreich erstellt"
+
+#: app/controllers/activities_controller.rb:70
+msgid "Activity was successfully updated."
+msgstr "Aktivität wurde erfolgreich aktualisiert"
+
+#: app/controllers/activities_controller.rb:85
+msgid "Activity deleted"
+msgstr "Aktivitäten gelöscht"
+
+#: app/controllers/activities_controller.rb:97
+msgid "Not implemented"
+msgstr "Nicht implementiert"
+
+#: app/controllers/admin/forums_controller.rb:39
+msgid "Forum was successfully created."
+msgstr "Forum wurde erfolgreich erstellt."
+
+#: app/controllers/admin/forums_controller.rb:52
+msgid "Forum was successfully updated."
+msgstr "Forum wurde erfolgreich aktualisiert."
+
+#: app/controllers/admin/forums_controller.rb:65
+msgid "Forum was successfully destroyed."
+msgstr "Forum wurde erfolgreich gelöscht."
+
+#: app/controllers/admin/forums_controller.rb:78
+msgid "There must be at least one forum."
+msgstr "Es muss mindestens ein Forum geben"
+
+#: app/controllers/admin/people_controller.rb:12
+msgid "Action failed."
+msgstr "Aktivität missglückt"
+
+#: app/controllers/admin/people_controller.rb:15
+msgid "%s updated."
+msgstr "%s aktualisiert"
+
+#: app/controllers/admin/preferences_controller.rb:35
+msgid "Preferences successfully updated."
+msgstr "Einstellungen wurden erfolgreich aktualisiert."
+
+#: app/controllers/admin/preferences_controller.rb:37
+msgid "Restart the server to activate the changes"
+msgstr "Server neu starten um die Änderungen zu aktivieren"
+
+#: app/controllers/application.rb:22
+msgid "Admin access required"
+msgstr "Man muss hierzu als Admin angemeldet sein"
+
+#: app/controllers/application.rb:62
+msgid "Warning: your email address is still at %{default_domain}. "
+msgstr "Achtung: Deine E-Mail-Adresse steht immer noch auf %{default_domain}. "
+
+#: app/controllers/application.rb:63 app/controllers/application.rb:67
+msgid "Change it here"
+msgstr "Hier ändern"
+
+#: app/controllers/application.rb:66
+msgid "Warning: your password is still the default. "
+msgstr "Achtung: Dein Passwort ist immer noch wie in der Voreinstellung. "
+
+#: app/controllers/comments_controller.rb:26
+msgid "Comment was successfully created."
+msgstr "Kommentar wurde erfolgreich erstellt."
+
+#: app/controllers/comments_controller.rb:39
+msgid "Comment deleted"
+msgstr "Kommentar gelöscht"
+
+#: app/controllers/comments_controller.rb:63
+msgid "You must be contacts to complete that action"
+msgstr "Ihr müsst Freunde sein um diese Aktion auszuführen"
+
+#: app/controllers/connections_controller.rb:23
+msgid "Connection request sent!"
+msgstr "Freundschaftsanfrage gesendet."
+
+#: app/controllers/connections_controller.rb:28
+msgid "Invalid connection"
+msgstr "Ungültige Freundschaft"
+
+#: app/controllers/connections_controller.rb:42
+msgid "Accepted connection with %{name}"
+msgstr "Freundschaftsantrag wurde von %{name} angenommen"
+
+#: app/controllers/connections_controller.rb:45
+msgid "Declined connection with %{name}"
+msgstr "Freundschafsantrag wurde von %{name} abgelehnt"
+
+#: app/controllers/connections_controller.rb:55
+msgid "Ended connection with %{name}"
+msgstr "Freundschaft mit %{name} wurde beendet"
+
+#: app/controllers/connections_controller.rb:80
+msgid "Invalid connection."
+msgstr "Ungültige Freundschaft."
+
+#: app/controllers/connections_controller.rb:84
+msgid "Invalid or expired connection request"
+msgstr "Ungültiger oder abgelaufener Freundschaftsantrag"
+
+#: app/controllers/connections_controller.rb:93
+msgid "Invalid connection request: person deactivated"
+msgstr "Ungültige Freundschaftsanfrage: Mitglied deaktiviert"
+
+#: app/controllers/messages_controller.rb:73
+msgid "Message sent to everyone!"
+msgstr "Nachricht an alle gesendet!"
+
+#: app/controllers/messages_controller.rb:86
+msgid "Message sent!"
+msgstr "Nachricht gesendet!"
+
+#: app/controllers/messages_controller.rb:99
+msgid "Message trashed"
+msgstr "Nachricht ist nun im Papierkorb"
+
+#: app/controllers/messages_controller.rb:102
+#: app/controllers/messages_controller.rb:116
+#: app/controllers/password_reminders_controller.rb:28
+msgid "Invalid action"
+msgstr "Ungültige Aktivität"
+
+#: app/controllers/messages_controller.rb:113
+msgid "Message restored to inbox"
+msgstr "Nachricht wieder im Posteingang"
+
+#: app/controllers/password_reminders_controller.rb:13
+msgid "Invalid email address"
+msgstr "Ungültige E-Mail-Adresse"
+
+#: app/controllers/password_reminders_controller.rb:17
+msgid "Your password has been sent"
+msgstr "Dein Passwort wurde gesendet"
+
+#: app/controllers/people_controller.rb:20
+msgid "That person is not active"
+msgstr "Dieses Mitglied ist nicht aktiv"
+
+#: app/controllers/people_controller.rb:50
+msgid "Thanks for signing up! A verification email has been sent to %{person}."
+msgstr ""
+"Danke fürs Anmelden! Eine Bestätigungsmail wurde an %{person} gesendet."
+
+#: app/controllers/people_controller.rb:54
+msgid "Thanks for signing up!"
+msgstr "Danke fürs Anmelden!"
+
+#: app/controllers/people_controller.rb:70
+msgid "Invalid email verification code"
+msgstr "Ungültiger E-Mail-Bestätigungscode"
+
+#: app/controllers/people_controller.rb:77
+msgid "Email verified. Your profile is active!"
+msgstr "E-Mail bestätigt. Dein Profil ist aktiviert!"
+
+#: app/controllers/people_controller.rb:96
+msgid "Profile updated!"
+msgstr "Profilfoto aktualisiert!"
+
+#: app/controllers/people_controller.rb:106
+msgid "Passwords can't be changed in demo mode."
+msgstr "Passwort kann im Demo-Modus nicht geändert werden."
+
+#: app/controllers/people_controller.rb:110
+msgid "Password changed."
+msgstr "Passwort wurde geändert."
+
+#: app/controllers/photos_controller.rb:32
+msgid "Your browser doesn't appear to support file uploading"
+msgstr "Dein Browser scheint den Upload nicht zu unterstützen"
+
+#: app/controllers/photos_controller.rb:44
+msgid "Photo successfully uploaded"
+msgstr "Foto erfolgreich hochgeladen"
+
+#: app/controllers/photos_controller.rb:67
+msgid "Invalid image!"
+msgstr "Ungültiges Bild"
+
+#: app/controllers/photos_controller.rb:83
+msgid "Photo deleted"
+msgstr "Foto gelöscht"
+
+#: app/controllers/posts_controller.rb:49
+msgid "Post created"
+msgstr "Eintrag erstellt"
+
+#: app/controllers/posts_controller.rb:60
+msgid "Post updated"
+msgstr "Eintrag aktualisiert"
+
+#: app/controllers/posts_controller.rb:71
+msgid "Post destroyed"
+msgstr "Eintrag gelöscht"
+
+#: app/controllers/sessions_controller.rb:14
+msgid "Your account has been deactivated"
+msgstr "Dein Zugang wurde deaktiviert"
+
+#: app/controllers/sessions_controller.rb:18
+msgid ""
+"Unverified email address. Please check your email for your activation code."
+msgstr ""
+"Unbestätigte E-Mail-Adresse. Bitte deine E-Mail nach dem Aktivierungscode "
+"durchsuchen."
+
+#: app/controllers/sessions_controller.rb:36
+msgid "Logged in successfully"
+msgstr "Erfolgreich eingeloggt"
+
+#: app/controllers/sessions_controller.rb:44
+msgid "Invalid email/password combination"
+msgstr "Ungültige E-Mail/Passwort Kombination"
+
+#: app/controllers/sessions_controller.rb:55
+msgid "Your account is inactive."
+msgstr "Dein Zugang ist nicht aktiv."
+
+#: app/controllers/sessions_controller.rb:59
+msgid "You have been logged out."
+msgstr "Du wurdest ausgeloggt."
+
+#: app/controllers/topics_controller.rb:33
+msgid "Topic was successfully created."
+msgstr "Thema wurde erfolgreich erstellt."
+
+#: app/controllers/topics_controller.rb:46
+msgid "Topic was successfully updated."
+msgstr "Thema wurde erfolgreich aktualisiert."
+
+#: app/controllers/topics_controller.rb:59
+msgid "Topic was successfully destroyed."
+msgstr "Thema wurde erfolgreich gelöscht."
+
+#: app/helpers/activities_helper.rb:10
+msgid "View %s's blog"
+msgstr "%ss Blog anzeigen"
+
+#: app/helpers/activities_helper.rb:11
+msgid "%{person} made a blog post titled %{title}."
+msgstr "%{person} verfasste einen Blogbeitrag mit dem Titel %{title}. "
+
+#: app/helpers/activities_helper.rb:20
+msgid "%{person} made a comment to %{someone}'s blog post %{post}."
+msgstr ""
+"%{person} hat einen Kommentar für %{someone}s Blogbeitrag %{post} "
+"geschrieben."
+
+#: app/helpers/activities_helper.rb:24 app/helpers/activities_helper.rb:65
+msgid "%{person} commented on %{wall}."
+msgstr "%{person} kommentierte %{wall}."
+
+#: app/helpers/activities_helper.rb:28 app/helpers/activities_helper.rb:69
+msgid "%{person1} and %{person2} have connected."
+msgstr "%{person1} und %{person2} sind jetzt Freunde."
+
+#: app/helpers/activities_helper.rb:32
+msgid "%{person} made a post on the forum topic %{topic}."
+msgstr "%{person} hat einen Beitrag zum Thema %{topic} hinzugefügt."
+
+#: app/helpers/activities_helper.rb:35
+msgid "%{person} created the new discussion topic %{topic}."
+msgstr "%{person} hat des neue Thema %{topic} erstellt."
+
+#: app/helpers/activities_helper.rb:38 app/helpers/activities_helper.rb:80
+msgid "%{person}'s profile picture has changed."
+msgstr "%{person}s Profilbild hat sich geändert."
+
+#: app/helpers/activities_helper.rb:40 app/helpers/activities_helper.rb:82
+msgid "%{person}'s description has changed."
+msgstr "%{person}s Beschreibung hat sich geändert."
+
+#: app/helpers/activities_helper.rb:53 app/helpers/activities_helper.rb:74
+msgid "%{person} made a %{post}."
+msgstr "%{person} schrieb einen %{post}."
+
+#: app/helpers/activities_helper.rb:53
+msgid "new blog post"
+msgstr "neuen Blogeintrag"
+
+#: app/helpers/activities_helper.rb:61
+msgid "%{person} made a comment on %{someone}'s %{post}."
+msgstr "%{person} hat einen Kommentar für %{someone}s %{post} geschrieben."
+
+#: app/helpers/activities_helper.rb:63
+msgid "blog post"
+msgstr "Blogeintrag"
+
+#: app/helpers/activities_helper.rb:75
+msgid "forum post"
+msgstr "Forumsbeitrag"
+
+#: app/helpers/activities_helper.rb:77
+msgid "%{person} created a %{topic}."
+msgstr "%{person} fügte %{topic} hinzu."
+
+#: app/helpers/activities_helper.rb:78
+msgid "new discussion topic"
+msgstr "neues Diskussionsthema"
+
+#: app/helpers/activities_helper.rb:147
+msgid "%{person}'s wall"
+msgstr "%{person}s Gästebuch"
+
+#: app/helpers/application_helper.rb:7 app/helpers/application_helper.rb:24
+#: app/views/layouts/application.html.erb:62
+msgid "Home"
+msgstr "Home"
+
+#: app/helpers/application_helper.rb:8 app/helpers/application_helper.rb:25
+#: app/helpers/searches_helper.rb:16 app/views/admin/people/index.html.erb:3
+#: app/views/layouts/application.html.erb:62 app/views/people/index.html.erb:3
+msgid "People"
+msgstr "Mitglieder"
+
+#: app/helpers/application_helper.rb:10 app/helpers/application_helper.rb:26
+#: app/views/layouts/application.html.erb:62 app/views/topics/edit.html.erb:8
+msgid "Forum"
+msgstr "Forum"
+
+#: app/helpers/application_helper.rb:12 app/helpers/searches_helper.rb:12
+msgid "Forums"
+msgstr "Foren"
+
+#: app/helpers/application_helper.rb:14
+msgid "Resources"
+msgstr "Resourcen"
+
+#: app/helpers/application_helper.rb:16
+msgid "Profile"
+msgstr "Profile"
+
+#: app/helpers/application_helper.rb:17 app/helpers/searches_helper.rb:14
+#: app/views/home/_messages_preview.html.erb:2
+#: app/views/layouts/application.html.erb:62
+#: app/views/messages/index.html.erb:2
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: app/helpers/application_helper.rb:18 app/views/comments/edit.html.erb:12
+#: app/views/comments/index.html.erb:6 app/views/comments/new.html.erb:12
+#: app/views/posts/edit.html.erb:8
+msgid "Blog"
+msgstr "Blog"
+
+#: app/helpers/application_helper.rb:19 app/views/people/edit.html.erb:79
+msgid "Photos"
+msgstr "Fotos"
+
+#: app/helpers/application_helper.rb:20
+#: app/views/shared/_contacts_preview.html.erb:2
+msgid "Contacts"
+msgstr "Freunde"
+
+#: app/helpers/application_helper.rb:28
+msgid "Prefs"
+msgstr "Einstellungen"
+
+#: app/helpers/application_helper.rb:36
+#: app/views/admin/preferences/edit.html.erb:58
+msgid "About"
+msgstr "Über uns"
+
+#: app/helpers/application_helper.rb:112
+msgid "Send a message"
+msgstr "Neue Nachrichten"
+
+#: app/helpers/application_helper.rb:112
+msgid "Send reply"
+msgstr "Antwort schicken"
+
+#: app/helpers/application_helper.rb:120
+msgid "HTML and %{markdown} supported"
+msgstr "unterstützt HTML und %{markdown}"
+
+#: app/helpers/shared_helper.rb:19
+msgid "less than 5 seconds ago"
+msgstr "vor weniger als fünf Sekunden"
+
+#: app/helpers/shared_helper.rb:19
+msgid "less than 10 seconds ago"
+msgstr "vor weniger als zehn Sekunden"
+
+#: app/helpers/shared_helper.rb:19
+msgid "less than 20 seconds ago"
+msgstr "vor weniger als 20 Sekunden"
+
+#: app/helpers/shared_helper.rb:20
+msgid "half a minute ago"
+msgstr "vor einer halben Minute"
+
+#: app/helpers/shared_helper.rb:20
+msgid "less than a minute ago"
+msgstr "vor weniger als einer Minute"
+
+#: app/helpers/shared_helper.rb:20
+msgid "about 1 month ago"
+msgstr "ungefähr vor einem Monat"
+
+#: app/helpers/shared_helper.rb:21
+msgid "about 1 year ago"
+msgstr "ungefähr vor einem Jahr"
+
+#: app/helpers/shared_helper.rb:29
+msgid "one minute ago"
+msgid_plural "%{minutes} minutes ago"
+msgstr[0] "vor einer Minute"
+msgstr[1] "vor %{minutes} Minuten"
+
+#: app/helpers/shared_helper.rb:31
+msgid "about one hour ago"
+msgid_plural "about %{hours} hours ago"
+msgstr[0] "ungefähr vor einer Stunde"
+msgstr[1] "ungefähr vor %{hours} Stunden"
+
+#: app/helpers/shared_helper.rb:33
+msgid "one day ago"
+msgid_plural "%{days} days ago"
+msgstr[0] "vor einem Tag"
+msgstr[1] "vor %{days} Tagen"
+
+#: app/helpers/shared_helper.rb:35
+msgid "one month ago"
+msgid_plural "%{months} months ago"
+msgstr[0] "vor einem Monat"
+msgstr[1] "vor %{months} Monaten"
+
+#: app/helpers/shared_helper.rb:37
+msgid "over one year ago"
+msgid_plural "over %{years} years ago"
+msgstr[0] "vor über einem Jahr"
+msgstr[1] "vor über %{years} Jahren"
+
+#: app/models/activity.rb:-
+msgid "activity"
+msgstr "Aktivität"
+
+#: app/models/activity.rb:-
+msgid "Activity|Public"
+msgstr "Aktivität|Öffentlich"
+
+#: app/models/activity.rb:-
+msgid "Activity|Item"
+msgstr "Aktivität|Eintrag"
+
+#: app/models/activity.rb:-
+msgid "Activity|Person"
+msgstr "Aktivität|Mitglied"
+
+#: app/models/activity.rb:-
+msgid "Activity|Item type"
+msgstr "Aktivität|Eintragstyp"
+
+#: app/models/activity.rb:-
+msgid "Activity|Created at"
+msgstr "Aktivität|Erstellt am"
+
+#: app/models/activity.rb:-
+msgid "Activity|Updated at"
+msgstr "Aktivität|Aktualisiert am"
+
+#: app/models/blog.rb:-
+msgid "blog"
+msgstr "Blog"
+
+#: app/models/blog.rb:-
+msgid "Blog|Person"
+msgstr "Blog|Mitglied"
+
+#: app/models/blog.rb:-
+msgid "Blog|Created at"
+msgstr "Blog|Erstellt am"
+
+#: app/models/blog.rb:-
+msgid "Blog|Updated at"
+msgstr "Blog|Aktualisiert am"
+
+#: app/models/comment.rb:-
+msgid "comment"
+msgstr "Kommentar"
+
+#: app/models/comment.rb:-
+msgid "Comment|Commenter"
+msgstr "Kommentar|Kommentierender"
+
+#: app/models/comment.rb:-
+msgid "Comment|Commentable"
+msgstr "Kommentar|Kommentierbar"
+
+#: app/models/comment.rb:-
+msgid "Comment|Commentable type"
+msgstr "Kommentar|Kommentierbarer Typ"
+
+#: app/models/comment.rb:-
+msgid "Comment|Body"
+msgstr "Kommentar|Inhalt"
+
+#: app/models/comment.rb:-
+msgid "Comment|Created at"
+msgstr "Kommentar|Erstellt am"
+
+#: app/models/comment.rb:-
+msgid "Comment|Updated at"
+msgstr "Kommentar|Aktualisiert am"
+
+#: app/models/communication.rb:-
+msgid "communication"
+msgstr "Kommunikation"
+
+#: app/models/communication.rb:-
+msgid "Communication|Subject"
+msgstr "Kommunikation|Betreff"
+
+#: app/models/communication.rb:-
+msgid "Communication|Content"
+msgstr "Kommunikation|Inhalt"
+
+#: app/models/communication.rb:-
+msgid "Communication|Parent"
+msgstr "Kommunikation|Übergeordnet"
+
+#: app/models/communication.rb:-
+msgid "Communication|Sender"
+msgstr "Kommunikation|Sender"
+
+#: app/models/communication.rb:-
+msgid "Communication|Recipient"
+msgstr "Kommunikation|Empfänger"
+
+#: app/models/communication.rb:-
+msgid "Communication|Sender deleted at"
+msgstr "Kommunikation|Sender gelöscht am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Sender read at"
+msgstr "Kommunikation|Vom Sender gelesen am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Recipient deleted at"
+msgstr "Kommunikation|Empfänger gelöscht am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Recipient read at"
+msgstr "Kommunikation|Vom Empfänger gelesen am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Replied at"
+msgstr "Kommunikation|Geantwortet am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Type"
+msgstr "Kommunikation|Typ"
+
+#: app/models/communication.rb:-
+msgid "Communication|Created at"
+msgstr "Kommunikation|Erstellt am"
+
+#: app/models/communication.rb:-
+msgid "Communication|Updated at"
+msgstr "Kommunikation|Aktualisiert am"
+
+#: app/models/connection.rb:-
+msgid "connection"
+msgstr "Freundschaft"
+
+#: app/models/connection.rb:-
+msgid "Connection|Person"
+msgstr "Freundschaft|Mitglied"
+
+#: app/models/connection.rb:-
+msgid "Connection|Contact"
+msgstr "Freundschaft|Kontakt"
+
+#: app/models/connection.rb:-
+msgid "Connection|Status"
+msgstr "Freundschaft|Status"
+
+#: app/models/connection.rb:-
+msgid "Connection|Accepted at"
+msgstr "Freundschaft|Akzeptiert am"
+
+#: app/models/connection.rb:-
+msgid "Connection|Created at"
+msgstr "Freundschaft|Seit"
+
+#: app/models/connection.rb:-
+msgid "Connection|Updated at"
+msgstr "Freundschaft|Aktualisiert am"
+
+#: app/models/email_verification.rb:-
+msgid "email verification"
+msgstr "E-Mail Bestätigung"
+
+#: app/models/email_verification.rb:-
+msgid "EmailVerification|Person"
+msgstr "E-Mail Bestätigung|Mitglied"
+
+#: app/models/email_verification.rb:-
+msgid "EmailVerification|Code"
+msgstr "E-Mail Bestätigung|Code"
+
+#: app/models/email_verification.rb:-
+msgid "EmailVerification|Created at"
+msgstr "E-Mail Bestätigung|Erstellt am"
+
+#: app/models/email_verification.rb:-
+msgid "EmailVerification|Updated at"
+msgstr "E-Mail Bestätigung|Aktualisiert am"
+
+#: app/models/feed.rb:-
+msgid "feed"
+msgstr "Feed"
+
+#: app/models/feed.rb:-
+msgid "Feed|Person"
+msgstr "Feed|Mitglied"
+
+#: app/models/feed.rb:-
+msgid "Feed|Activity"
+msgstr "Feed|Aktivität"
+
+#: app/models/forum.rb:-
+msgid "forum"
+msgstr "Forum"
+
+#: app/models/forum.rb:-
+msgid "Forum|Name"
+msgstr "Forum|Name"
+
+#: app/models/forum.rb:-
+msgid "Forum|Description"
+msgstr "Forum|Beschreibung"
+
+#: app/models/forum.rb:-
+msgid "Forum|Topics count"
+msgstr "Forum|Themenanzahl"
+
+#: app/models/forum.rb:-
+msgid "Forum|Created at"
+msgstr "Forum|Erstellt am"
+
+#: app/models/forum.rb:-
+msgid "Forum|Updated at"
+msgstr "Forum|Aktualisiert am"
+
+#: app/models/page_view.rb:-
+msgid "page view"
+msgstr "Seitenansicht"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Request url"
+msgstr "Seitenansicht|Url anfordern"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Ip address"
+msgstr "Seitenansicht|IP Adresse"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Referer"
+msgstr "Seitenansicht|Referer"
+
+#: app/models/page_view.rb:-
+msgid "PageView|User agent"
+msgstr "Seitenansicht|User agent"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Created at"
+msgstr "Seitenansicht|Erstellt am"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Updated at"
+msgstr "Seitenansicht|Aktualsiert am"
+
+#: app/models/page_view.rb:-
+msgid "PageView|Person"
+msgstr "Seitenansicht|Mitglied"
+
+#: app/models/person.rb:-
+msgid "person"
+msgstr "Mitglied"
+
+#: app/models/person.rb:-
+msgid "Person|Email"
+msgstr "Mitglied|E-Mail"
+
+#: app/models/person.rb:-
+msgid "Person|Name"
+msgstr "Mitglied|Name"
+
+#: app/models/person.rb:-
+msgid "Person|Remember token"
+msgstr "Mitglied|Remember token"
+
+#: app/models/person.rb:-
+msgid "Person|Crypted password"
+msgstr "Mitglied|verschlüsseltes Passwort"
+
+#: app/models/person.rb:-
+msgid "Person|Description"
+msgstr "Mitglied|Beschreibung"
+
+#: app/models/person.rb:-
+msgid "Person|Remember token expires at"
+msgstr "Mitglied|Remember token expires at"
+
+#: app/models/person.rb:-
+msgid "Person|Last contacted at"
+msgstr "Mitglied|Zuletzt kontaktiert am"
+
+#: app/models/person.rb:-
+msgid "Person|Last logged in at"
+msgstr "Mitglied|Zuletzt eingeloggt am"
+
+#: app/models/person.rb:-
+msgid "Person|Forum posts count"
+msgstr "Mitglied|Anzahl der Forumsbeiträge"
+
+#: app/models/person.rb:-
+msgid "Person|Blog post comments count"
+msgstr "Mitglied|Anzahl der Blogbeiträge"
+
+#: app/models/person.rb:-
+msgid "Person|Wall comments count"
+msgstr "Mitglied|Anzahl der Gästebucheinträge"
+
+#: app/models/person.rb:-
+msgid "Person|Created at"
+msgstr "Mitglied|Erstellt am"
+
+#: app/models/person.rb:-
+msgid "Person|Updated at"
+msgstr "Mitglied|Aktualisiert am"
+
+#: app/models/person.rb:-
+msgid "Person|Admin"
+msgstr "Mitglied|Admin"
+
+#: app/models/person.rb:-
+msgid "Person|Deactivated"
+msgstr "Mitglied|Deaktiviert"
+
+#: app/models/person.rb:-
+msgid "Person|Connection notifications"
+msgstr "Mitglied|Freundschaftsanfrage"
+
+#: app/models/person.rb:-
+msgid "Person|Message notifications"
+msgstr "Mitglied|Nachrichtsmeldung"
+
+#: app/models/person.rb:-
+msgid "Person|Wall comment notifications"
+msgstr "Mitglied|Gästebucheintrag-Benachrichtigung"
+
+#: app/models/person.rb:-
+msgid "Person|Blog comment notifications"
+msgstr "Mitglied|Blogeintrags-Benachrichtigung"
+
+#: app/models/person.rb:-
+msgid "Person|Email verified"
+msgstr "Mitglied|E-Mail bestätigt"
+
+#: app/models/person.rb:100
+msgid "must be a valid email address"
+msgstr "muss eine gültige E-Mail-Adresse sein"
+
+#: app/models/person.rb:335
+msgid "is incorrect"
+msgstr "ist falsch"
+
+#: app/models/person.rb:339
+msgid "does not match confirmation"
+msgstr "stimmt nicht mit Bestätigung überein"
+
+#: app/models/person_mailer.rb:13
+msgid "Password reminder <password-reminder@%{domain}>"
+msgstr "Passworterinnerung <password-reminder@%{domain}>"
+
+#: app/models/person_mailer.rb:15 app/views/password_reminders/new.html.erb:1
+msgid "Password reminder"
+msgstr "Passwort Erinnerung"
+
+#: app/models/person_mailer.rb:20
+msgid "Message notification <message@%{domain}>"
+msgstr "Nachrichtsmeldung <message@%{domain}>"
+
+#: app/models/person_mailer.rb:22 app/views/messages/new.html.erb:1
+msgid "New message"
+msgstr "Neue Nachricht"
+
+#: app/models/person_mailer.rb:28
+msgid "Contact request <connection@%{domain}>"
+msgstr "Freundschaftsanfrage <connection@%{domain}>"
+
+#: app/models/person_mailer.rb:30
+msgid "New contact request"
+msgstr "Neuer Freundschaftsantrag"
+
+#: app/models/person_mailer.rb:38 app/models/person_mailer.rb:49
+msgid "Comment notification <comment@%{domain}>"
+msgstr "Kommentarbenachrichtigung <comment@%{domain}>"
+
+#: app/models/person_mailer.rb:40
+msgid "New blog comment"
+msgstr "Neuer Blog-Kommentar"
+
+#: app/models/person_mailer.rb:51
+msgid "New wall comment"
+msgstr "Neuer Gästebucheintrag"
+
+#: app/models/person_mailer.rb:59
+msgid "Email verification <email@%{domain}>"
+msgstr "E-Mail Bestätigung <email@%{domain}>"
+
+#: app/models/person_mailer.rb:61
+msgid "Email verification"
+msgstr "E-Mail Bestätigung"
+
+#: app/models/photo.rb:-
+msgid "photo"
+msgstr "Foto"
+
+#: app/models/photo.rb:-
+msgid "Photo|Person"
+msgstr "Foto|Mitglied"
+
+#: app/models/photo.rb:-
+msgid "Photo|Parent"
+msgstr "Foto|übergeordnet"
+
+#: app/models/photo.rb:-
+msgid "Photo|Content type"
+msgstr "Foto|Inhalt"
+
+#: app/models/photo.rb:-
+msgid "Photo|Filename"
+msgstr "Foto|Dateiname"
+
+#: app/models/photo.rb:-
+msgid "Photo|Thumbnail"
+msgstr "Foto|Thumbnail"
+
+#: app/models/photo.rb:-
+msgid "Photo|Size"
+msgstr "Foto|Größe"
+
+#: app/models/photo.rb:-
+msgid "Photo|Width"
+msgstr "Foto|Breite"
+
+#: app/models/photo.rb:-
+msgid "Photo|Height"
+msgstr "Foto|Höhe"
+
+#: app/models/photo.rb:-
+msgid "Photo|Primary"
+msgstr "Foto|Haupt"
+
+#: app/models/photo.rb:-
+msgid "Photo|Created at"
+msgstr "Foto|Erstellt am"
+
+#: app/models/photo.rb:-
+msgid "Photo|Updated at"
+msgstr "Foto|Aktualisiert am"
+
+#: app/models/photo.rb:41
+msgid "You must choose a file to upload"
+msgstr "Du musst eine Datei für den Upload auswählen"
+
+#: app/models/photo.rb:46
+msgid "You can only upload images (GIF, JPEG, or PNG)"
+msgstr "Dun kannst nur Bilder hochladen (GIF, JPEG, oder PNG)"
+
+#: app/models/photo.rb:51
+msgid "Images should be smaller than %{limit} MB"
+msgstr "Bilder müssen kleiner als %{limit} MB sein"
+
+#: app/models/post.rb:-
+msgid "post"
+msgstr "Eintrag"
+
+#: app/models/post.rb:-
+msgid "Post|Blog"
+msgstr "Eintrag|Blog"
+
+#: app/models/post.rb:-
+msgid "Post|Topic"
+msgstr "Eintrag|Thema"
+
+#: app/models/post.rb:-
+msgid "Post|Person"
+msgstr "Eintrag|Mitglied"
+
+#: app/models/post.rb:-
+msgid "Post|Title"
+msgstr "Eintrag|Titel"
+
+#: app/models/post.rb:-
+msgid "Post|Body"
+msgstr "Eintrag|Inhalt"
+
+#: app/models/post.rb:-
+msgid "Post|Blog post comments count"
+msgstr "Eintrag|Anzahl der Kommentare"
+
+#: app/models/post.rb:-
+msgid "Post|Type"
+msgstr "Eintrag|Typ"
+
+#: app/models/post.rb:-
+msgid "Post|Created at"
+msgstr "Eintrag|Erstellt am"
+
+#: app/models/post.rb:-
+msgid "Post|Updated at"
+msgstr "Eintrag|Aktualisiert am"
+
+#: app/models/topic.rb:-
+msgid "topic"
+msgstr "Thema"
+
+#: app/models/topic.rb:-
+msgid "Topic|Forum"
+msgstr "Thema|Forum"
+
+#: app/models/topic.rb:-
+msgid "Topic|Person"
+msgstr "Thema|Mitglied"
+
+#: app/models/topic.rb:-
+msgid "Topic|Name"
+msgstr "Thema|Name"
+
+#: app/models/topic.rb:-
+msgid "Topic|Forum posts count"
+msgstr "Thema|Anzahl Forumseinträge"
+
+#: app/models/topic.rb:-
+msgid "Topic|Created at"
+msgstr "Thema|Erstellt am"
+
+#: app/models/topic.rb:-
+msgid "Topic|Updated at"
+msgstr "Thema|Aktualisiert"
+
+#: app/views/activities/edit.html.erb:1
+msgid "Editing activity"
+msgstr "Aktivität"
+
+#: app/views/activities/edit.html.erb:7 app/views/activities/new.html.erb:7
+#: app/views/comments/edit.html.erb:7 app/views/comments/index.html.erb:5
+#: app/views/comments/new.html.erb:7 app/views/connections/new.html.erb:7
+#: app/views/posts/edit.html.erb:18 app/views/topics/edit.html.erb:13
+msgid "Person"
+msgstr "Mitglied"
+
+#: app/views/activities/edit.html.erb:12 app/views/activities/new.html.erb:12
+msgid "Instance"
+msgstr "Instance"
+
+#: app/views/activities/edit.html.erb:17 app/views/activities/new.html.erb:17
+#: app/views/comments/edit.html.erb:22 app/views/comments/index.html.erb:8
+#: app/views/comments/new.html.erb:22
+msgid "Type"
+msgstr "Typ"
+
+#: app/views/activities/edit.html.erb:22
+#: app/views/admin/forums/edit.html.erb:17
+#: app/views/admin/preferences/edit.html.erb:74
+#: app/views/comments/edit.html.erb:27 app/views/messages/edit.html.erb:13
+#: app/views/people/edit.html.erb:71 app/views/photos/edit.html.erb:10
+#: app/views/posts/edit.html.erb:28 app/views/topics/edit.html.erb:28
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: app/views/activities/edit.html.erb:26
+#: app/views/activities/index.html.erb:15
+#: app/views/admin/forums/index.html.erb:15
+#: app/views/comments/edit.html.erb:31 app/views/comments/index.html.erb:17
+#: app/views/topics/edit.html.erb:32
+msgid "Show"
+msgstr "Anzeigen"
+
+#: app/views/activities/edit.html.erb:27 app/views/activities/new.html.erb:26
+#: app/views/activities/show.html.erb:18
+#: app/views/admin/forums/edit.html.erb:21
+#: app/views/admin/forums/new.html.erb:21 app/views/comments/edit.html.erb:32
+#: app/views/comments/new.html.erb:31 app/views/comments/show.html.erb:23
+#: app/views/connections/new.html.erb:26
+#: app/views/connections/show.html.erb:18 app/views/posts/forum_new.html.erb:9
+#: app/views/topics/edit.html.erb:33
+msgid "Back"
+msgstr "Zurück"
+
+#: app/views/activities/index.html.erb:1
+msgid "Listing activities"
+msgstr "Aktivitäten auflisten"
+
+#: app/views/activities/index.html.erb:16
+#: app/views/activities/show.html.erb:17
+#: app/views/admin/forums/index.html.erb:16
+#: app/views/admin/preferences/show.html.erb:53
+#: app/views/comments/index.html.erb:18 app/views/comments/show.html.erb:22
+#: app/views/connections/show.html.erb:17
+#: app/views/posts/_blog_post.html.erb:8 app/views/posts/show.html.erb:8
+#: app/views/topics/_forum_post.html.erb:10
+#: app/views/topics/_topic.html.erb:18
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: app/views/activities/index.html.erb:17
+#: app/views/admin/forums/index.html.erb:17
+#: app/views/comments/index.html.erb:19
+#: app/views/topics/_forum_post.html.erb:14
+#: app/views/topics/_topic.html.erb:19
+msgid "Destroy"
+msgstr "Löschen"
+
+#: app/views/activities/index.html.erb:17
+#: app/views/admin/forums/index.html.erb:18
+#: app/views/comments/index.html.erb:19
+#: app/views/topics/_forum_post.html.erb:16
+#: app/views/topics/_topic.html.erb:20
+msgid "Are you sure?"
+msgstr "Bist du sicher?"
+
+#: app/views/activities/index.html.erb:24 app/views/activities/new.html.erb:1
+msgid "New activity"
+msgstr "Neue Aktivität"
+
+#: app/views/activities/new.html.erb:22 app/views/admin/forums/new.html.erb:17
+#: app/views/comments/new.html.erb:27 app/views/connections/new.html.erb:22
+msgid "Create"
+msgstr "Erstellen"
+
+#: app/views/activities/show.html.erb:2 app/views/comments/show.html.erb:2
+#: app/views/connections/show.html.erb:2
+msgid "Person:"
+msgstr "Mitglied:"
+
+#: app/views/activities/show.html.erb:7
+msgid "Instance:"
+msgstr "Instance:"
+
+#: app/views/activities/show.html.erb:12 app/views/comments/show.html.erb:17
+msgid "Type:"
+msgstr "Typ:"
+
+#: app/views/admin/forums/edit.html.erb:1
+msgid "Editing forum"
+msgstr "Forum bearbeiten"
+
+#: app/views/admin/forums/edit.html.erb:7
+#: app/views/admin/forums/index.html.erb:5
+#: app/views/admin/forums/new.html.erb:7 app/views/people/edit.html.erb:13
+#: app/views/people/new.html.erb:24 app/views/topics/edit.html.erb:18
+msgid "Name"
+msgstr "Name"
+
+#: app/views/admin/forums/edit.html.erb:12
+#: app/views/admin/forums/index.html.erb:6
+#: app/views/admin/forums/new.html.erb:12 app/views/people/edit.html.erb:18
+msgid "Description"
+msgstr "Beschreibung"
+
+#: app/views/admin/forums/index.html.erb:1
+msgid "Listing forums"
+msgstr "Foren auflisten"
+
+#: app/views/admin/forums/index.html.erb:7
+msgid "Topics count"
+msgstr "Themenanzahl"
+
+#: app/views/admin/forums/index.html.erb:26
+#: app/views/admin/forums/new.html.erb:1
+msgid "New forum"
+msgstr "Forum"
+
+#: app/views/admin/preferences/edit.html.erb:2
+msgid "Editing preferences"
+msgstr "Einstellungen bearbeiten"
+
+#: app/views/admin/preferences/edit.html.erb:11
+msgid "Application name"
+msgstr "Anwendungsname"
+
+#: app/views/admin/preferences/edit.html.erb:16
+msgid "Email domain"
+msgstr "E-Mail Domain"
+
+#: app/views/admin/preferences/edit.html.erb:21
+msgid "Server name"
+msgstr "Server-Name"
+
+#: app/views/admin/preferences/edit.html.erb:26
+msgid "Smtp server"
+msgstr "Smtp-Server"
+
+#: app/views/admin/preferences/edit.html.erb:30
+msgid "Send email when messages, connection requests, etc., are sent"
+msgstr ""
+"E-Mail schicken, wenn Nachrichten oder Freundschaftsanfragen etc. gesendet "
+"werden."
+
+#: app/views/admin/preferences/edit.html.erb:33
+msgid "Email notifications"
+msgstr "E-Mail-Benachrichtigung"
+
+#: app/views/admin/preferences/edit.html.erb:39
+msgid "Display a note that the site is just a demonstration"
+msgstr "Eine Nachricht anzeigen, dass dies nur eine Demo-Seite ist"
+
+#: app/views/admin/preferences/edit.html.erb:42
+msgid "Demo site"
+msgstr "Demo-Seite"
+
+#: app/views/admin/preferences/edit.html.erb:48
+msgid "Verify email for new registrations using an activation code"
+msgstr "Neuregistrierung durch einen Aktivierungscode bestätigen"
+
+#: app/views/admin/preferences/edit.html.erb:51
+msgid "Email verifications"
+msgstr "E-Mail-Bestätigung"
+
+#: app/views/admin/preferences/edit.html.erb:68
+#: app/views/admin/preferences/show.html.erb:45
+msgid ""
+"Analytics (will be inserted \n"
+"         just before the %{body} tag)"
+msgstr ""
+"Analytics (wird eingefügt \n"
+"        genau vor dem %{body} Tag)"
+
+#: app/views/admin/preferences/edit.html.erb:76
+#: app/views/sessions/new.html.erb:25
+msgid "or"
+msgstr "oder"
+
+#: app/views/admin/preferences/edit.html.erb:76
+#: app/views/messages/new.html.erb:43 app/views/photos/edit.html.erb:11
+#: app/views/photos/new.html.erb:12
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: app/views/admin/preferences/show.html.erb:1
+msgid "Global preferences"
+msgstr "Globale Einstellungen"
+
+#: app/views/admin/preferences/show.html.erb:4
+msgid "Application name:"
+msgstr "Anwendungsname:"
+
+#: app/views/admin/preferences/show.html.erb:9
+msgid "Email domain:"
+msgstr "E-Mail-Domain"
+
+#: app/views/admin/preferences/show.html.erb:14
+msgid "Server name:"
+msgstr "Server-Name:"
+
+#: app/views/admin/preferences/show.html.erb:19
+msgid "Smtp server:"
+msgstr "Smtp-Server:"
+
+#: app/views/admin/preferences/show.html.erb:24
+msgid "Email notifications:"
+msgstr "E-Mail-Benachrichtigungen:"
+
+#: app/views/admin/preferences/show.html.erb:29
+msgid "Email verifications:"
+msgstr "E-Mail-Bestätigungen:"
+
+#: app/views/admin/preferences/show.html.erb:34
+msgid "Demo site:"
+msgstr "Demo-Seite:"
+
+#: app/views/admin/preferences/show.html.erb:39
+msgid "About text (nonblank text will lead to an 'about' link):"
+msgstr "'Über uns'-Text (ausgefülltes Feld führt zu einem 'Über uns' Link):"
+
+#: app/views/blogs/show.html.erb:2 app/views/posts/show.html.erb:3
+msgid "Blog for %s"
+msgstr "Blog von %s"
+
+#: app/views/blogs/show.html.erb:6
+msgid "No posts yet!"
+msgstr "Bisher noch keine Beiträge"
+
+#: app/views/blogs/show.html.erb:8
+msgid "Write a post"
+msgstr "Beitrag schreiben"
+
+#: app/views/blogs/show.html.erb:22 app/views/topics/show.html.erb:8
+msgid "Add new post"
+msgstr "Neuen Beitrag hinzufügen"
+
+#: app/views/comments/blog_post_new.html.erb:1
+msgid "Blog comment"
+msgstr "Kommentar"
+
+#: app/views/comments/blog_post_new.html.erb:5
+#: app/views/comments/wall_new.erb:5 app/views/posts/show.html.erb:31
+msgid "Leave a comment"
+msgstr "Kommentar schreiben"
+
+#: app/views/comments/blog_post_new.html.erb:13
+#: app/views/comments/wall_new.erb:13 app/views/forums/show.html.erb:15
+#: app/views/people/_wall.html.erb:13 app/views/posts/_blog_form.html.erb:13
+#: app/views/posts/_forum_form.html.erb:8 app/views/posts/show.html.erb:40
+#: app/views/topics/new.html.erb:8 app/views/topics/show.html.erb:21
+msgid "Submit"
+msgstr "Absenden"
+
+#: app/views/comments/edit.html.erb:1
+msgid "Editing comment"
+msgstr "Kommentar bearbeiten"
+
+#: app/views/comments/edit.html.erb:17 app/views/comments/index.html.erb:7
+#: app/views/comments/new.html.erb:17 app/views/posts/edit.html.erb:23
+msgid "Body"
+msgstr "Inhalt"
+
+#: app/views/comments/index.html.erb:1
+msgid "Listing comments"
+msgstr "Kommentare auflisten"
+
+#: app/views/comments/new.html.erb:1
+msgid "New comment"
+msgstr "Neuer Kommentar"
+
+#: app/views/comments/show.html.erb:7
+msgid "Blog:"
+msgstr "Blog:"
+
+#: app/views/comments/show.html.erb:12
+msgid "Body:"
+msgstr "Inhalt:"
+
+#: app/views/comments/wall_new.erb:1
+msgid "Wall comment"
+msgstr "Gästebucheintrag"
+
+#: app/views/connections/edit.html.erb:1
+msgid "Contact request"
+msgstr "Freundschaftsantrag"
+
+#: app/views/connections/edit.html.erb:4
+msgid "You have a contact request from %s"
+msgstr "Du hast eine Freundschaftsanfrage von %s"
+
+#: app/views/connections/edit.html.erb:8
+msgid "Accept"
+msgstr "Annehmen"
+
+#: app/views/connections/edit.html.erb:9
+msgid "Decline"
+msgstr "Ablehnen"
+
+#: app/views/connections/index.html.erb:2
+msgid "Contacts for %s"
+msgstr "Freunde von %s"
+
+#: app/views/connections/index.html.erb:19
+msgid "No contacts (yet)"
+msgstr "Bisher noch keine Kontakte"
+
+#: app/views/connections/new.html.erb:1
+msgid "New connection"
+msgstr "Neue Freundschaft"
+
+#: app/views/connections/new.html.erb:12
+msgid "Connection"
+msgstr "Freundschaft"
+
+#: app/views/connections/new.html.erb:17
+msgid "Status"
+msgstr "Status"
+
+#: app/views/connections/show.html.erb:7
+msgid "Connection:"
+msgstr "Freundschaft:"
+
+#: app/views/connections/show.html.erb:12
+msgid "Status:"
+msgstr "Status:"
+
+#: app/views/forums/show.html.erb:2
+msgid "Discussion topics"
+msgstr "Diskussionsthemen"
+
+#: app/views/forums/show.html.erb:10
+msgid "Add new topic"
+msgstr "Neues Thema hinzufügen"
+
+#: app/views/home/_feed.html.erb:1
+msgid "Activity Feed"
+msgstr "Letzte Aktivitäten"
+
+#: app/views/home/_forum_preview.html.erb:2
+msgid "Discussion Forum"
+msgstr "Forum"
+
+#: app/views/home/_forum_preview.html.erb:10
+msgid "Last post"
+msgstr "Letzter Beitrag"
+
+#: app/views/home/_forum_preview.html.erb:11
+msgid "%{timeago} by %{person}"
+msgstr "%{timeago} von %{person}"
+
+#: app/views/home/_forum_preview.html.erb:20
+msgid "Go to discussion forum &raquo;"
+msgstr "Zum Forum &raquo;"
+
+#: app/views/home/_members_preview.html.erb:4
+msgid "See all members &raquo;"
+msgstr "Alle Mitglieder anzeigen &raquo;"
+
+#: app/views/home/_message.html.erb:5 app/views/messages/_message.html.erb:19
+msgid "From:"
+msgstr "Von:"
+
+#: app/views/home/_messages_preview.html.erb:7
+msgid "All messages &raquo;"
+msgstr "Alle Nachrichten &raquo;"
+
+#: app/views/home/_requested_contacts.html.erb:2
+msgid "Contact Requests"
+msgstr "Freundschaftsanfrage"
+
+#: app/views/home/_requested_contacts.html.erb:15
+msgid "Respond"
+msgstr "Antworten"
+
+#: app/views/home/_requested_contacts.html.erb:16
+msgid "View profile"
+msgstr "Profil anzeigen"
+
+#: app/views/home/index.html.erb:14
+msgid "About %s"
+msgstr "Über %s"
+
+#: app/views/home/index.html.erb:17
+msgid "%s to learn more about us."
+msgstr "%s um mehr über uns zu erfahren."
+
+#: app/views/home/index.html.erb:17
+msgid "Click here"
+msgstr "Hier klicken"
+
+#: app/views/home/index.html.erb:21
+msgid "Join %{site}"
+msgstr "%{site} beitreten"
+
+#: app/views/home/index.html.erb:21
+msgid "the site"
+msgstr "Der Seite"
+
+#: app/views/layouts/application.html.erb:6
+msgid "Insoshi Open Source Social Networking Platform"
+msgstr "Insoshi - Open Source Plattform für Soziale Netzwerke"
+
+#: app/views/layouts/application.html.erb:14
+msgid "Return to Insoshi homepage"
+msgstr "Zurück zur Insoshi Homepage"
+
+#: app/views/layouts/application.html.erb:26
+msgid "Welcome, %s"
+msgstr "Willkommen, %s"
+
+#: app/views/layouts/application.html.erb:27
+msgid "Sign out"
+msgstr "Ausloggen"
+
+#: app/views/layouts/application.html.erb:31
+msgid "Standard view"
+msgstr "Standardansicht"
+
+#: app/views/layouts/application.html.erb:33
+msgid "Admin view"
+msgstr "Admin Ansicht"
+
+#: app/views/layouts/application.html.erb:37 app/views/sessions/new.html.erb:2
+#: app/views/sessions/new.html.erb:24
+msgid "Sign in"
+msgstr "Einloggen"
+
+#: app/views/layouts/application.html.erb:38 app/views/people/new.html.erb:3
+#: app/views/people/new.html.erb:41 app/views/sessions/new.html.erb:25
+msgid "Sign up"
+msgstr "Anmelden"
+
+#: app/views/layouts/application.html.erb:41
+msgid "I forgot my password"
+msgstr "Passwort vergessen"
+
+#: app/views/layouts/application.html.erb:53
+msgid ""
+"This is a demonstration site. Data may be modified or removed without "
+"warning."
+msgstr ""
+"Dies ist eine Beispielseite. Daten können ohne Warnung geändert oder "
+"entfernt werden. Achtung!"
+
+#: app/views/layouts/application.html.erb:65
+msgid "Powered by %s"
+msgstr "Realisiert mit %s"
+
+#: app/views/layouts/application.html.erb:65
+msgid "Insoshi open-source social networking platform"
+msgstr "Insoshi - Open Source Plattform für Soziale Netzwerke"
+
+#: app/views/messages/_message.html.erb:16
+msgid "To:"
+msgstr "An:"
+
+#: app/views/messages/_message.html.erb:25
+msgid "Subject:"
+msgstr "Betreff:"
+
+#: app/views/messages/_message.html.erb:29
+msgid "Read"
+msgstr "Lesen"
+
+#: app/views/messages/_message.html.erb:30 app/views/messages/show.html.erb:20
+msgid "Reply"
+msgstr "Antworten"
+
+#: app/views/messages/_message.html.erb:32
+#: app/views/messages/_message_nav.html.erb:4
+#: app/views/messages/show.html.erb:22
+msgid "Trash"
+msgstr "Papierkorb"
+
+#: app/views/messages/_message.html.erb:34 app/views/messages/show.html.erb:24
+msgid "Untrash"
+msgstr "Wiederherstellen"
+
+#: app/views/messages/_message_nav.html.erb:2
+msgid "Inbox"
+msgstr "Posteingang"
+
+#: app/views/messages/_message_nav.html.erb:3
+msgid "Sent"
+msgstr "Gesendet"
+
+#: app/views/messages/_sender_info.html.erb:3
+msgid "Sent to %s"
+msgstr "An %s gesendet"
+
+#: app/views/messages/_sender_info.html.erb:6
+msgid "Sent by %s"
+msgstr "Gesendet von %s"
+
+#: app/views/messages/edit.html.erb:1
+msgid "Editing message"
+msgstr "Nachricht bearbeiten"
+
+#: app/views/messages/edit.html.erb:8
+msgid "Content"
+msgstr "Inhalt"
+
+#: app/views/messages/index.html.erb:7
+msgid "No messages (yet!)"
+msgstr "Bisher noch keine Nachrichten"
+
+#: app/views/messages/new.html.erb:10
+msgid "Message preview"
+msgstr "Nachichtenvorschau"
+
+#: app/views/messages/new.html.erb:19
+msgid "To"
+msgstr "An"
+
+#: app/views/messages/new.html.erb:27
+msgid "Subject"
+msgstr "Betreff"
+
+#: app/views/messages/new.html.erb:31
+msgid "Your message"
+msgstr "Deine Nachricht"
+
+#: app/views/messages/new.html.erb:41
+msgid "Send!"
+msgstr "Senden!"
+
+#: app/views/messages/new.html.erb:42 app/views/people/edit.html.erb:72
+msgid "Preview"
+msgstr "Vorschau"
+
+#: app/views/messages/new.html.erb:45
+msgid "Send to all"
+msgstr "An alle versenden"
+
+#: app/views/messages/show.html.erb:4
+msgid "Message sent to %s"
+msgstr "Nachricht gesendet an %s"
+
+#: app/views/messages/show.html.erb:7
+msgid "Message from %s"
+msgstr "Nachricht von %s"
+
+#: app/views/messages/show.html.erb:19
+msgid "Sent %{timeago}"
+msgstr "%{timeago} gesendet"
+
+#: app/views/password_reminders/new.html.erb:5
+msgid "Enter your email address:"
+msgstr "E-Mail-Adresse eingeben:"
+
+#: app/views/password_reminders/new.html.erb:12
+msgid "Send reminder"
+msgstr "Erinnerung schicken"
+
+#: app/views/people/_comment.html.erb:7
+msgid "%{person} said %{timeago}"
+msgstr "%{person} sagte %{timeago}"
+
+#: app/views/people/_comment.html.erb:14 app/views/posts/_comment.html.erb:14
+msgid "delete"
+msgstr "löschen"
+
+#: app/views/people/_common_contacts.html.erb:3
+msgid "Common Contacts"
+msgstr "Gemeinsame Freunde"
+
+#: app/views/people/_common_contacts.html.erb:13
+msgid "See all &raquo;"
+msgstr "Alle anzeigen &raquo;"
+
+#: app/views/people/_recent_activity.html.erb:2
+msgid "Recent Activity"
+msgstr "Neue Aktivität"
+
+#: app/views/people/_recent_activity.html.erb:7
+msgid "%{person} last logged in %{timeago}"
+msgstr "%{person} %{timeago} zuletzt eingeloggt"
+
+#: app/views/people/_wall.html.erb:3
+msgid "Comment Wall"
+msgstr "Gästebuch"
+
+#: app/views/people/_wall.html.erb:18
+msgid "You must be connected to %s to leave a wall comment."
+msgstr ""
+"Du musst mit %s befreundet sein um einen Gästebucheintrag zu hinterlassen."
+
+#: app/views/people/_wall.html.erb:21
+msgid "Connect with %s now"
+msgstr "Befreunde dich jetzt mit %s"
+
+#: app/views/people/common_contacts.html.erb:2
+msgid "Common contacts with %s"
+msgstr "Gemeinsame Kontakte mit %s"
+
+#: app/views/people/common_contacts.html.erb:11
+msgid "No contacts in common"
+msgstr "Bisher noch keine gemeinsamen Kontakte"
+
+#: app/views/people/edit.html.erb:2
+msgid "Edit profile"
+msgstr "Profil bearbeiten"
+
+#: app/views/people/edit.html.erb:6
+msgid "Personal details"
+msgstr "Persönliche Details"
+
+#: app/views/people/edit.html.erb:30
+msgid "Email"
+msgstr "E-Mail"
+
+#: app/views/people/edit.html.erb:38
+msgid "Email notification preferences"
+msgstr "E-Mail-Bestätigungseinstellungen"
+
+#: app/views/people/edit.html.erb:40
+msgid ""
+"You will receive email notifications for each event type whose box is "
+"checked."
+msgstr ""
+"Markiere, für welche Ereignisse du E-Mail-Benachrichtigungen empfangen "
+"möchtest."
+
+#: app/views/people/edit.html.erb:47
+msgid "Connections:"
+msgstr "Freundschaften:"
+
+#: app/views/people/edit.html.erb:52
+msgid "Messages:"
+msgstr "Nachrichten:"
+
+#: app/views/people/edit.html.erb:57
+msgid "Wall comments:"
+msgstr "Gästebucheinträge:"
+
+#: app/views/people/edit.html.erb:62
+msgid "Blog comments:"
+msgstr "Blog-Kommentare"
+
+#: app/views/people/edit.html.erb:99
+msgid "select"
+msgstr "auswählen"
+
+#: app/views/people/edit.html.erb:112
+msgid "Add a photo"
+msgstr "Ein Foto hinzufügen"
+
+#: app/views/people/edit.html.erb:119
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+#: app/views/people/edit.html.erb:122
+msgid "Current Password"
+msgstr "Aktuelles Passwort"
+
+#: app/views/people/edit.html.erb:128
+msgid "New Password"
+msgstr "Neues Passwort"
+
+#: app/views/people/edit.html.erb:134 app/views/people/new.html.erb:35
+msgid "Confirm Password"
+msgstr "Passwort bestätigen"
+
+#: app/views/people/edit.html.erb:140
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: app/views/people/new.html.erb:5
+msgid "Sign up for %s"
+msgstr "Bei %s anmelden"
+
+#: app/views/people/new.html.erb:14 app/views/sessions/new.html.erb:6
+msgid "Email address"
+msgstr "E-Mail Adresse"
+
+#: app/views/people/new.html.erb:16
+msgid "(never made public, will be verified)"
+msgstr "(wird nie veröffentlicht, wird bestätigt)"
+
+#: app/views/people/new.html.erb:16
+msgid "(never made public)"
+msgstr "(wird nie veröffentlicht)"
+
+#: app/views/people/new.html.erb:25
+msgid "(will be displayed)"
+msgstr "(wird angezeigt)"
+
+#: app/views/people/new.html.erb:30 app/views/sessions/new.html.erb:13
+msgid "Password"
+msgstr "Passwort"
+
+#: app/views/people/show.html.erb:3
+msgid "Profile:"
+msgstr "Profile:"
+
+#: app/views/people/show.html.erb:5
+msgid "This person is not active"
+msgstr "Dieses Mitglied ist nicht aktiv"
+
+#: app/views/people/show.html.erb:10
+msgid "Your description is blank."
+msgstr "Deine Beschreibung ist leer."
+
+#: app/views/people/show.html.erb:11
+msgid "Click here to add a description"
+msgstr "Hier klicken um eine Beschreibung hinzuzufügen"
+
+#: app/views/people/show.html.erb:16
+msgid "You are viewing your own profile."
+msgstr "Dein eigenes Profil wird gerade angezeigt."
+
+#: app/views/people/show.html.erb:17
+msgid "Click here to edit it"
+msgstr "Hier klicken um es zu bearbeiten"
+
+#: app/views/people/show.html.erb:30
+msgid "Connect with %s!"
+msgstr "Befreunde dich mit %s"
+
+#: app/views/people/show.html.erb:36
+msgid "%s is one of your contacts"
+msgstr "%s ist einer deiner Freunde"
+
+#: app/views/people/show.html.erb:38
+msgid "end connection"
+msgstr "Freundschaft beenden"
+
+#: app/views/people/show.html.erb:42
+msgid "Are you sure you want to end connection with %s?"
+msgstr "Bist du sicher, dass du die Freundschaft mit %s beenden willst?"
+
+#: app/views/people/show.html.erb:48
+msgid "%s's blog"
+msgstr "%ss Blog"
+
+#: app/views/people/show.html.erb:52
+msgid "activate"
+msgstr "aktivieren"
+
+#: app/views/people/show.html.erb:52
+msgid "deactivate"
+msgstr "deaktivieren"
+
+#: app/views/people/show.html.erb:63
+msgid "%s to everyone"
+msgstr "%s an alle"
+
+#: app/views/person_mailer/blog_comment_notification.html.erb:1
+msgid "You have a new comment on your blog from %s"
+msgstr "Du hast eine neuen Kommentar auf deinem Blog von %s"
+
+#: app/views/person_mailer/connection_request.html.erb:1
+msgid "You have a new connection request from %s"
+msgstr "Du hast eine neue Freundschaftsanfrage von %s"
+
+#: app/views/person_mailer/email_verification.html.erb:1
+msgid "Click here to complete your email verification:"
+msgstr "Hier klicken um deine E-Mail-Bestätigung fertigzustellen"
+
+#: app/views/person_mailer/email_verification.html.erb:5
+msgid "Thanks!"
+msgstr "Danke!"
+
+#: app/views/person_mailer/message_notification.html.erb:1
+msgid "You have a new message at %s! Click here to retrieve it:"
+msgstr "Du hast eine neue Nachricht bei %s! Hier klicken um sie abzuholen"
+
+#: app/views/person_mailer/password_reminder.html.erb:1
+msgid "Your password is: %s"
+msgstr "Dein Passwort ist: %s"
+
+#: app/views/person_mailer/wall_comment_notification.html.erb:1
+msgid "You have a new comment on your wall from %s"
+msgstr "Du hast einen neuen Gästebucheintrag von %s"
+
+#: app/views/photos/edit.html.erb:6
+msgid "Update your photo:"
+msgstr "Foto aktualisieren"
+
+#: app/views/photos/new.html.erb:1
+msgid "Profile photo upload"
+msgstr "Profilfoto hinzufügen"
+
+#: app/views/photos/new.html.erb:7
+msgid "Upload a photo:"
+msgstr "Ein Foto hochladen:"
+
+#: app/views/photos/new.html.erb:11
+msgid "Upload"
+msgstr "Upload"
+
+#: app/views/posts/_blog_post.html.erb:9 app/views/posts/show.html.erb:9
+msgid "Delete"
+msgstr "löschen"
+
+#: app/views/posts/_blog_post.html.erb:15 app/views/posts/show.html.erb:17
+msgid "Posted %{timeago} by %{person}"
+msgstr "%{timeago} von %{person} erstellt"
+
+#: app/views/posts/_blog_post.html.erb:18
+msgid "1 comment"
+msgid_plural "%d comments"
+msgstr[0] "1 Kommentar"
+msgstr[1] "%d Kommentare"
+
+#: app/views/posts/_comment.html.erb:4
+msgid "Comment"
+msgstr "Kommentar"
+
+#: app/views/posts/_comment.html.erb:7
+msgid "%{person} posted a comment %{timeago}:"
+msgstr "%{person} hat %{timeago} einen Kommentar geschrieben:"
+
+#: app/views/posts/blog_edit.html.erb:1 app/views/posts/forum_edit.html.erb:1
+msgid "Edit post"
+msgstr "Beitrag bearbeiten"
+
+#: app/views/posts/blog_new.html.erb:1 app/views/posts/forum_new.html.erb:1
+msgid "New post"
+msgstr "Neuer Beitrag"
+
+#: app/views/posts/edit.html.erb:1
+msgid "Editing post"
+msgstr "Beitrag bearbeiten"
+
+#: app/views/posts/edit.html.erb:13 app/views/topics/_topic.html.erb:5
+msgid "Topic"
+msgstr "Thema"
+
+#: app/views/posts/show.html.erb:24
+msgid "Comments"
+msgstr "Kommentare"
+
+#: app/views/searches/_box.html.erb:1
+msgid "Search %s"
+msgstr "%s suchen"
+
+#: app/views/searches/_box.html.erb:3
+msgid "Search Insoshi"
+msgstr "Insoshi durchsuchen"
+
+#: app/views/searches/_box.html.erb:6
+msgid "Search"
+msgstr "Suche"
+
+#: app/views/searches/index.html.erb:2
+msgid "Search results"
+msgstr "Suchergebnisse"
+
+#: app/views/searches/index.html.erb:5
+msgid "No results"
+msgstr "Keine Ergebnisse"
+
+#: app/views/sessions/new.html.erb:19
+msgid "Remember me:"
+msgstr "Anmeldedaten merken"
+
+#: app/views/sessions/new.html.erb:29
+msgid "I forgot my password!"
+msgstr "Passwort vergessen?"
+
+#: app/views/shared/_activity.html.erb:14
+msgid "Are you sure you want to delete this activity from your profile?"
+msgstr ""
+"Bist du sicher, dass du diese Aktivität von deinem Profil entfernen möchtest?"
+
+#: app/views/shared/_contacts_preview.html.erb:11
+msgid "All contacts &raquo;"
+msgstr "Alle Freunde &raquo;"
+
+#: app/views/shared/_minifeed.html.erb:1
+msgid "Minifeed"
+msgstr "Minifeed"
+
+#: app/views/topics/_forum_post.html.erb:7
+msgid "%{person} posted %{timeago}"
+msgstr "%{person} schrieb %{timeago}"
+
+#: app/views/topics/_topic.html.erb:12
+msgid "1 post"
+msgid_plural "%d posts"
+msgstr[0] "1 Eintrag"
+msgstr[1] "%d Einträge"
+
+#: app/views/topics/_topic.html.erb:15
+msgid "Created by %{person} %{timeago}"
+msgstr "Von %{person} %{timeago} erstellt"
+
+#: app/views/topics/edit.html.erb:1
+msgid "Editing topic"
+msgstr "Thema bearbeiten"
+
+#: app/views/topics/edit.html.erb:23
+msgid "Posts count"
+msgstr "Anzahl Beiträge"
+
+#: app/views/topics/new.html.erb:1
+msgid "New topic"
+msgstr "Neues Thema"
+
+#: lib/authenticated_system.rb:69
+msgid "You have been logged in as the guest user."
+msgstr "Du wurdest als Gast eingeloggt."
+
+#: lib/authenticated_system.rb:72
+msgid "You must log in to access this page."
+msgstr "Du musst eingeloggt sein, um auf diese Seite zuzugreifen."
+
+#: config/initializers/gettext.rb:20
+msgid "&laquo; Previous"
+msgstr "&laquo; Vorherige"
+
+#: config/initializers/gettext.rb:21
+msgid "Next &raquo;"
+msgstr "Nächste &raquo;"

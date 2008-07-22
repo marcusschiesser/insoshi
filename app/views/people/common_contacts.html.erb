@@ -1,5 +1,5 @@
 <%- column_div :type => :primary do -%>
-<h2>Common contacts with <%= @person.name %></h2>
+<h2><%= _("Common contacts with %s") % @person.name %></h2>
 <% unless @common_connections.empty? -%>
   <%- common_contacts = @common_connections.map(&:contact) -%>
   <%= will_paginate(@common_connections) %>
@@ -8,7 +8,7 @@
   </ul>
   <%= will_paginate(@common_connections) %>
 <% else %>
-  <h2>No contacts in common</h2>
+  <h2><%= _("No contacts in common") %></h2>
 <% end -%>
 
 <%- end -%>

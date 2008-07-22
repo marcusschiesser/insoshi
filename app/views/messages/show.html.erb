@@ -1,10 +1,10 @@
 <%- column_div :type => :primary do -%>
   <% if current_person?(@message.sender) %>
     <% other_person = @message.recipient %>
-    <% heading = "Message sent to #{h other_person.name}" %>
+    <% heading = _("Message sent to %s") % h(other_person.name) %>
   <% else %>
     <% other_person = @message.sender %>
-    <% heading = "Message from #{h other_person.name}" %>
+    <% heading = _("Message from %s") % h(other_person.name) %>
   <% end %>
   
   <h2><%= heading %></h2>
@@ -16,12 +16,12 @@
   <%= @message.subject %></h3>
   <%= display @message.content %>
   <p class="meta tools">
-    Sent <%= time_ago_in_words @message.created_at %> ago |
-    <%= link_to "Reply", reply_message_path(@message) %> |
+    <%= _("Sent %{timeago}") % {:timeago => time_ago_with_ago(@message.created_at)} %> |
+    <%= link_to _("Reply"), reply_message_path(@message) %> |
     <% unless @message.trashed?(current_person) -%>
-      <%= link_to("Trash", @message, :method => :delete) %>
+      <%= link_to(_("Trash"), @message, :method => :delete) %>
     <% else -%>
-      <%= link_to "Untrash", undestroy_message_path(@message), 
+      <%= link_to _("Untrash"), undestroy_message_path(@message), 
                              :method => :put %>
     <% end -%>
   </p>

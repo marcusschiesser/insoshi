@@ -1,11 +1,11 @@
-<h1>Listing comments</h1>
+<h1><%= _("Listing comments") %></h1>
 
 <table>
   <tr>
-    <th>Person</th>
-    <th>Blog</th>
-    <th>Body</th>
-    <th>Type</th>
+    <th><%= _("Person") %></th>
+    <th><%= _("Blog") %></th>
+    <th><%= _("Body") %></th>
+    <th><%= _("Type") %></th>
   </tr>
 
 <% for comment in @comments %>
@@ -14,9 +14,9 @@
     <td><%=h comment.blog_id %></td>
     <td><%=h comment.body %></td>
     <td><%=h comment.type %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to _('Show'), comment %></td>
+    <td><%= link_to _('Edit'), edit_comment_path(comment) %></td>
+    <td><%= link_to _('Destroy'), comment, :confirm => _('Are you sure?'), :method => :delete %></td>
   </tr>
 <% end %>
 </table>

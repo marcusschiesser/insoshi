@@ -3,6 +3,9 @@
 
 require(File.join(File.dirname(__FILE__), 'config', 'boot'))
 
+# we need this to require the vendor/gems
+require(File.join(File.dirname(__FILE__), 'config', 'environment'))
+
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'

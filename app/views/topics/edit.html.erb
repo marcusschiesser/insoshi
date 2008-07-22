@@ -1,33 +1,33 @@
-<h2>Editing topic</h2>
+<h2><%= _("Editing topic") %></h2>
 
 <%= error_messages_for :topic %>
 
 <% form_for :topic, :url => forum_topic_path(@forum, @topic),
             :html => { :method => :put} do |f| %>
   <p>
-    <b>Forum</b><br />
+    <b><%= _("Forum") %></b><br />
     <%= f.text_field :forum_id %>
   </p>
 
   <p>
-    <b>Person</b><br />
+    <b><%= _("Person") %></b><br />
     <%= f.text_field :person_id %>
   </p>
 
   <p>
-    <b>Name</b><br />
+    <b><%= _("Name") %></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b>Posts count</b><br />
+    <b><%= _("Posts count") %></b><br />
     <%= f.text_field :forum_posts_count %>
   </p>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit _("Update") %>
   </p>
 <% end %>
 
-<%= link_to 'Show', forum_topic_path(@forum, @topic) %> |
-<%= link_to 'Back', forums_path %>
+<%= link_to _('Show'), forum_topic_path(@forum, @topic) %> |
+<%= link_to _('Back'), forums_path %>

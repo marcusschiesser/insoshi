@@ -97,7 +97,7 @@ class Person < ActiveRecord::Base
   validates_length_of       :description, :maximum => MAX_DESCRIPTION
   validates_format_of       :email,
                             :with => EMAIL_REGEX,
-                            :message => "must be a valid email address"
+                            :message => N_("must be a valid email address")
   validates_uniqueness_of   :email
 
   before_create :create_blog
@@ -332,11 +332,11 @@ class Person < ActiveRecord::Base
     self.password_confirmation = passwords[:password_confirmation]
     self.verify_password = passwords[:verify_password]
     unless verify_password == unencrypted_password
-      errors.add(:password, "is incorrect")
+      errors.add(:password, _("is incorrect"))
       return false
     end
     unless passwords[:new_password] == password_confirmation
-      errors.add(:password, "does not match confirmation")
+      errors.add(:password, _("does not match confirmation"))
       return false
     end
     self.password = passwords[:new_password]

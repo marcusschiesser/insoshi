@@ -12,19 +12,19 @@ body {
 #header, #wrap, #footer {
   margin: 0 auto;
   text-align: left;
-  width: 744px;
+  width: 824px;
 }
 #content {
-  width: 744px;
+  width: 824px;
   float: left;
 }
 .col1 {
   float: left;
-  width: 490px;
+  width: 544px;
 }
 .col2 {
   float: right;
-  width: 240px;
+  width: 266px;
 }
 .single-col .col1 {
   margin: 0 210px;
@@ -48,7 +48,7 @@ body {
 /* Header-nav */
 #nav {
   margin: 44px 0 0 0;
-  width: 560px;
+  width: 640px;
   float: right;
 }
 #nav li {
@@ -60,7 +60,7 @@ body {
   margin: 0 0 0 0;
   padding: 0;
   text-align: center;
-  width: 70px;
+  width: 80px;
 }
 #nav li a {
   color: #fff;
@@ -85,7 +85,7 @@ body {
   clear: both;
   margin-top: 48px;
   padding: 24px 0;
-  width: 744px;
+  width: 824px;
   
 }
 

@@ -36,7 +36,7 @@ class Admin::ForumsController < ApplicationController
 
     respond_to do |format|
       if @forum.save
-        flash[:notice] = 'Forum was successfully created.'
+        flash[:notice] = _('Forum was successfully created.')
         format.html { redirect_to(admin_forums_url) }
       else
         format.html { render :action => "new" }
@@ -49,7 +49,7 @@ class Admin::ForumsController < ApplicationController
 
     respond_to do |format|
       if @forum.update_attributes(params[:forum])
-        flash[:notice] = 'Forum was successfully updated.'
+        flash[:notice] = _('Forum was successfully updated.')
         format.html { redirect_to(@forum) }
       else
         format.html { render :action => "edit" }
@@ -62,7 +62,7 @@ class Admin::ForumsController < ApplicationController
     @forum.destroy
 
     respond_to do |format|
-      flash[:success] = 'Forum was successfully destroyed.'
+      flash[:success] = _('Forum was successfully destroyed.')
       format.html { redirect_to(admin_forums_url) }
     end
   end
@@ -75,7 +75,7 @@ class Admin::ForumsController < ApplicationController
     
     def protect_last_forum
       if Forum.count == 1
-        flash[:error] = "There must be at least one forum."
+        flash[:error] = _("There must be at least one forum.")
         redirect_to admin_forums_url
       end
     end

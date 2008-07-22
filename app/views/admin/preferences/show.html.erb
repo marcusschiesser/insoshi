@@ -1,53 +1,53 @@
-<h2>Global preferences</h2>
+<h2><%= _("Global preferences") %></h2>
 
 <p>
-  <b>Application name:</b>
+  <b><%= _("Application name:") %></b>
   <%=h @preferences.app_name %>
 </p>
 
 <p>
-  <b>Email domain:</b>
+  <b><%= _("Email domain:") %></b>
   <%=h @preferences.domain %>
 </p>
 
 <p>
-  <b>Server name:</b>
+  <b><%= _("Server name:") %></b>
   <%=h @preferences.server_name %>
 </p>
 
 <p>
-  <b>Smtp server:</b>
+  <b><%= _("Smtp server:") %></b>
   <%=h @preferences.smtp_server %>
 </p>
 
 <p>
-  <b>Email notifications:</b>
+  <b><%= _("Email notifications:") %></b>
   <%=h @preferences.email_notifications %>
 </p>
 
 <p>
-  <b>Email verifications:</b>
+  <b><%= _("Email verifications:") %></b>
   <%=h @preferences.email_verifications %>
 </p>
 
 <p>
-  <b>Demo site:</b>
+  <b><%= _("Demo site:") %></b>
   <%=h @preferences.demo %>
 </p>
 
 <p>
-  <b>About text (nonblank text will lead to an 'about' link):</b>
+  <b><%= _("About text (nonblank text will lead to an 'about' link):") %></b>
 </p>
 <%= display @preferences.about %>
 
 
 <p>
-  <b>Analytics (will be inserted 
-     just before the <%= h("</body>") %> tag):</b>
+  <b><%= _("Analytics (will be inserted 
+         just before the %{body} tag)") % {:body => h("</body>")} %>:</b>
 </p>
   <pre>
 <%=h @preferences.analytics %>
   </pre>
 
 
-<%= link_to 'Edit', edit_admin_preference_path(@preferences) %>
+<%= link_to _('Edit'), edit_admin_preference_path(@preferences) %>

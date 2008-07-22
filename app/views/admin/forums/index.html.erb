@@ -1,10 +1,10 @@
-<h2>Listing forums</h2>
+<h2><%= _("Listing forums") %></h2>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Topics count</th>
+    <th><%= _("Name") %></th>
+    <th><%= _("Description") %></th>
+    <th><%= _("Topics count") %></th>
   </tr>
 
 <% for forum in @forums %>
@@ -12,10 +12,10 @@
     <td><%= forum_name(forum) %></td>
     <td><%=h forum.description %></td>
     <td><%=h forum.topics_count %></td>
-    <td><%= link_to 'Show', admin_forum_path(forum) %></td>
-    <td><%= link_to 'Edit', edit_admin_forum_path(forum) %></td>
-    <td><%= link_to 'Destroy', admin_forum_path(forum),
-                               :confirm => 'Are you sure?',
+    <td><%= link_to _('Show'), admin_forum_path(forum) %></td>
+    <td><%= link_to _('Edit'), edit_admin_forum_path(forum) %></td>
+    <td><%= link_to _('Destroy'), admin_forum_path(forum),
+                               :confirm => _('Are you sure?'),
                                :method => :delete %></td>
   </tr>
 <% end %>
@@ -23,4 +23,4 @@
 
 <br />
 
-<%= link_to 'New forum', new_admin_forum_path %>
+<%= link_to _('New forum'), new_admin_forum_path %>

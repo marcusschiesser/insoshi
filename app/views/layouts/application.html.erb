@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= Locale.get %>" lang="<%= Locale.get %>">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Insoshi Open Source Social Networking Platform</title>
+    <title><%= _("Insoshi Open Source Social Networking Platform") %></title>
     <%= stylesheet_link_tag "default" %>
     <%= javascript_include_tag :defaults %>
   </head>
@@ -11,7 +11,7 @@
     <div id="header-wrap">
       <div id="header">
         <h1>
-          <a href="/" title="Return to Insoshi homepage">
+          <a href="/" title="<%= _("Return to Insoshi homepage") %>">
             <%= image_tag "logo-insoshi.png" %>
           </a>
         </h1>
@@ -23,22 +23,22 @@
         
           <p class="welcome">
             <%- if logged_in? -%>
-              Welcome, <%= h current_person.name %>!
-              (<%= link_to "Sign out", logout_path %>)
+              <%= _("Welcome, %s") % h(current_person.name) %>!
+              (<%= link_to _("Sign out"), logout_path %>)
               <%- if current_person.admin? -%>
                 <br />
                 <%- if admin_view? -%>
-                  <%= link_to("Standard view", home_path) %>
+                  <%= link_to(_("Standard view"), home_path) %>
                 <%- else -%>
-                  <%= link_to("Admin view", admin_preferences_path) %>
+                  <%= link_to(_("Admin view"), admin_preferences_path) %>
                 <%- end -%>
               <%- end -%>
             <%- else -%>
-              <%= link_to "Sign in", login_path %> or
-              <%= link_to "Sign up", signup_path %>
+              <%= link_to _("Sign in"), login_path %> <%= _("or") %>
+              <%= link_to _("Sign up"), signup_path %>
               <%- if global_prefs.can_send_mail? -%>
               <br />
-              <%= link_to "I forgot my password",
+              <%= link_to _("I forgot my password"),
                            new_password_reminder_path %>
               <%- end -%>             
             <%- end -%>
@@ -50,8 +50,7 @@
       <div id="content">
         <%- if global_prefs.demo? -%>
           <p class="error" style="font-weight: bold;">
-            This is a demonstration site. 
-            Data may be modified or removed without warning.
+            <%= _("This is a demonstration site. Data may be modified or removed without warning.") %>
           </p>
         <%- end -%>
         <% flash.each do |key, msg| %>
@@ -60,11 +59,10 @@
         <%= yield %>
         <div id="footer">
           <p id="footer-nav">
-            <a href="/">Home</a> | <a href="/messages">Messages</a> | <a href="/people">People</a> | <a href="/forums">Forum</a>
+            <a href="/"><%= _("Home") %></a> | <a href="/messages"><%= _("Messages") %></a> | <a href="/people"><%= _("People") %></a> | <a href="/forums"><%= _("Forum") %></a>
 
           </p>
-          <p>Powered by
-            <a href="http://insoshi.com/">Insoshi open-source social networking platform</a>
+          <p><%= _("Powered by %s") % link_to(_("Insoshi open-source social networking platform"), "http://insoshi.com/") %>
           </p>
         </div>
       </div>

@@ -1,32 +1,32 @@
-<h1>Editing comment</h1>
+<h1><%= _("Editing comment") %></h1>
 
 <%= error_messages_for :comment %>
 
 <% form_for(@comment) do |f| %>
   <p>
-    <b>Person</b><br />
+    <b><%= _("Person") %></b><br />
     <%= f.text_field :person_id %>
   </p>
 
   <p>
-    <b>Blog</b><br />
+    <b><%= _("Blog") %></b><br />
     <%= f.text_field :blog_id %>
   </p>
 
   <p>
-    <b>Body</b><br />
+    <b><%= _("Body") %></b><br />
     <%= f.text_area :body %>
   </p>
 
   <p>
-    <b>Type</b><br />
+    <b><%= _("Type") %></b><br />
     <%= f.text_field :type %>
   </p>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit _("Update") %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @comment %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to _('Show'), @comment %> |
+<%= link_to _('Back'), comments_path %>

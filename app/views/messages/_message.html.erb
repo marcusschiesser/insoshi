@@ -13,25 +13,25 @@
   </div>
   <p>
     <%- if current_person?(message.sender) -%>
-      <span class="label">To:</span>
+      <span class="label"><%= _("To:") %></span>
       <%= person_link message.recipient, :class => "url fn" %>
     <%- else -%>
-      <span class="label">From:</span>
+      <span class="label"><%= _("From:") %></span>
       <%= person_link message.sender, :class => "url fn" %>
     <%- end -%>
-    <span class="meta"><%= time_ago_in_words message.created_at %> ago</span>
+    <span class="meta"><%= time_ago_with_ago message.created_at %></span>
   </p>
   <p>
-    <span class="label">Subject:</span>
+    <span class="label"><%= _("Subject:") %></span>
     <%= link_to sanitize(message.subject), message %>    
   </p>
   <p class="tools meta">
-    <%= link_to "Read", message %> |
-    <%= link_to "Reply", reply_message_path(message) %> |
+    <%= link_to _("Read"), message %> |
+    <%= link_to _("Reply"), reply_message_path(message) %> |
     <% unless message.trashed?(current_person) -%>
-      <%= link_to("Trash", message, :method => :delete) %>
+      <%= link_to(_("Trash"), message, :method => :delete) %>
     <% else -%>
-      <%= link_to "Untrash", undestroy_message_path(message), 
+      <%= link_to _("Untrash"), undestroy_message_path(message), 
                              :method => :put %>
     <% end -%>    
   </p>

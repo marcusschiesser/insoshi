@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
     
     respond_to do |format|
       if @comment.save
-        flash[:success] = 'Comment was successfully created.'
+        flash[:success] = _('Comment was successfully created.')
         format.html { redirect_to comments_url }
       else
         format.html { render :action => resource_template("new") }
@@ -36,7 +36,7 @@ class CommentsController < ApplicationController
     @comment.destroy
 
     respond_to do |format|
-      flash[:success] = "Comment deleted"
+      flash[:success] = _("Comment deleted")
       format.html { redirect_to comments_url }
     end
   end
@@ -60,7 +60,7 @@ class CommentsController < ApplicationController
     def connection_required
       if wall?
         unless connected_to?(person)
-          flash[:notice] = "You must be contacts to complete that action"
+          flash[:notice] = _("You must be contacts to complete that action")
           redirect_to @person
         end
       end

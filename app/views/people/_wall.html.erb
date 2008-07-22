@@ -1,6 +1,6 @@
 <%- if logged_in? -%>
   <div class="wall">
-    <h2>Comment Wall</h2>
+    <h2><%= _("Comment Wall") %></h2>
     <a name="wall"></a>
     
     <%- if connected_to?(@person) -%>
@@ -10,15 +10,15 @@
         </div>
   
         <div class="form_row">
-          <%= submit_tag "Submit", :class => "button" %>
+          <%= submit_tag _("Submit"), :class => "button" %>
         </div>
       <% end %>
     <%- else -%>
       <p>
-      You must be connected to <%= h @person.name %> to leave a wall comment.
+      <%= _("You must be connected to %s to leave a wall comment.") % h(@person.name) %> 
       </p>
       <p>
-      <%= link_to "Connect with #{h @person.name} now",
+      <%= link_to _("Connect with %s now") % h(@person.name),
                   person_connections_path(@person), :method => :post %>
       </p>
     <%- end -%>

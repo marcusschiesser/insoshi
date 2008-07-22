@@ -2,6 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  init_gettext "insoshi"
   helper :all # include all helpers, all the time
   include AuthenticatedSystem
   include SharedHelper
@@ -18,7 +19,7 @@ class ApplicationController < ActionController::Base
 
     def admin_required
       unless current_person.admin?
-        flash[:error] = "Admin access required"
+        flash[:error] = _("Admin access required")
         redirect_to home_url
       end
     end
@@ -58,13 +59,12 @@ class ApplicationController < ActionController::Base
       default_password = "admin"
       if logged_in? and current_person.admin? 
         if current_person.email =~ /@#{default_domain}$/
-          flash[:notice] = %(Warning: your email address is still at 
-            #{default_domain}.
-            <a href="#{edit_person_path(current_person)}">Change it here</a>.)
+          flash[:notice] = (_("Warning: your email address is still at %{default_domain}. ") % {:default_domain => default_domain}) << 
+            %(<a href="#{edit_person_path(current_person)}">) << _("Change it here") << "</a>."
         end
         if current_person.unencrypted_password == default_password
-          flash[:error] = %(Warning: your password is still the default.
-            <a href="#{edit_person_path(current_person)}">Change it here</a>.)          
+          flash[:error] = _("Warning: your password is still the default. ") << 
+            %(<a href="#{edit_person_path(current_person)}">) << _("Change it here") << "</a>."          
         end
       end
     end

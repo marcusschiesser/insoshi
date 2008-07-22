@@ -1,20 +1,20 @@
 <%- column_div :type => :primary do -%>
   <div class="profile vcard">
-    <h2>Profile: <span class="fn n"><%= h @person.name %></span></h2>
+    <h2><%= _("Profile:") %><span class="fn n"><%= h @person.name %></span></h2>
     <%- if admin? and not @person.active? -%>
-      <p class="error">This person is not active</p>
+      <p class="error"><% _("This person is not active") %></p>
     <%- end -%>
     <%- if current_person?(@person) -%>
       <%- if current_person.description.blank? -%>
         <div class="error">
-          Your description is blank.
-          <%= link_to "Click here to add a description",
+          <%= _("Your description is blank.") %>
+          <%= link_to _("Click here to add a description"),
                       edit_person_path(@person) %>
         </div>
       <%- else -%>
         <div class="notice">
-          You are viewing your own profile.
-          <%= link_to "Click here to edit it", edit_person_path(@person) %>
+          <%= _("You are viewing your own profile.") %>
+          <%= link_to _("Click here to edit it"), edit_person_path(@person) %>
         </div>
       <%- end -%>
     <%- end -%>
@@ -27,29 +27,29 @@
          <%- if logged_in? -%>
           <%- unless Connection.exists?(@person, current_person) -%>
             <li>
-            <%= link_to "Connect with #{h @person.name}!",
+            <%= link_to _("Connect with %s!") % @person.name,
                         person_connections_path(@person), :method => :post %>
             </li>
           <%- end -%>
           <%- if Connection.connected?(@person, current_person) -%>
           <li>
-            <%= h @person.name %> is one of your contacts
+            <%= _("%s is one of your contacts") % h(@person.name) %> 
             <br />
-           (<%= link_to "end connection", 
+           (<%= link_to _("end connection"), 
                connection_path(Connection.conn(current_person, @person)), 
                :method => :delete,
               :confirm => 
-"Are you sure you want to end connection with #{h @person.name}?" %>)
+_("Are you sure you want to end connection with %s?") % h(@person.name) %>)
           
           </li>
           <%- end -%>
           <li><%= email_link @person %></li>
         <%- end -%>
-          <li><%= link_to "#{h @person.name}'s blog",
+          <li><%= link_to _("%s's blog") % h(@person.name),
                   blog_path(@person.blog) %></li>
           <%- if current_person.admin? -%>
           <li>
-          <%- activity = @person.deactivated? ? "activate" : "deactivate" -%>
+          <%- activity = @person.deactivated? ? _("activate") : _("deactivate") -%>
           <%= link_to activity, 
                       admin_person_path(@person, :task => "deactivated"),
                       :method => :put %>
@@ -60,7 +60,7 @@
       
       <%- if current_person?(@person) and current_person.admin? -%>
         <ul class="tools">
-          <li><%= email_link @person %> to everyone</li>
+          <li><%= _("%s to everyone") % email_link(@person) %> </li>
         </ul>
       <%- end -%>
     </div>
